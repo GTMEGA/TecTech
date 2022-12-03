@@ -1,0 +1,50 @@
+static def curse(curseDep) {
+    return 'curse.maven:' + curseDep
+}
+
+def deobfCurse(curseDep) {
+    try {
+        return deobfMaven("https://cursemaven.com/", curse(curseDep))
+    } catch (Exception ignored) {
+        println('Failed to get dep ' + curseDep + ' from cursemaven. Grabbing from mirror.')
+        return deobfMaven("https://mvn.falsepattern.com/cursemaven/", curse(curseDep))
+    }
+}
+
+dependencies {
+    //region Hard
+    // GregTech
+    api 'net.industrial-craft:industrialcraft-2:2.2.828-experimental:dev'
+    api('gtmega:gt5u-mc1.7.10:5.28.25-mega-1.0.9rc1-0:dev') {
+        transitive = false
+    }
+    api'com.github.GTMEGA:StructureLib:0237ab2549:deobf'
+    api'eu.usrv:YAMCore:1.7.10-0.5.79:deobf'
+    //endregion Hard
+
+    //region Compile
+    // NEI
+    api'com.github.GTNewHorizons:NotEnoughItems:master-SNAPSHOT:dev'
+    api("com.github.GTNewHorizons:CodeChickenCore:master-SNAPSHOT:dev") {
+        transitive = true
+    }
+    // OpenComputers 1.7.7
+    compileOnly(deobfCurse('opencomputers-223008:3965933'))
+    // ComputerCraft 1.75
+    compileOnly(deobfCurse('computercraft-67504:2269339'))
+    // Baubles 1.0.1.10
+    compileOnly(deobfCurse('baubles-227083:2224857'))
+    // Thaumcraft 4.2.1.0
+    compileOnly(deobfCurse('thaumcraft-223628:2215796'))
+    // OpenModularTurrets 2.2.11-245
+    compileOnly(deobfCurse('openmodularturrets-224663:2549788'))
+    compileOnly("appeng:appliedenergistics2:rv3-beta-22:dev") {  // TODO: use in-house version
+        transitive = false
+    }
+    //endregion Compile
+
+    //region Testing
+    // Waila 1.5.10
+    runtimeOnly(deobfCurse('waila-73488:2230518'))
+    //endregion Testing
+}
