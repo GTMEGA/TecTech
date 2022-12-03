@@ -18,16 +18,14 @@ dependencies {
     api('gtmega:gt5u-mc1.7.10:5.28.25-mega-1.0.9rc1-0:dev') {
         transitive = false
     }
-    api'com.github.GTMEGA:StructureLib:0237ab2549:deobf'
-    api'eu.usrv:YAMCore:1.7.10-0.5.79:deobf'
+    api 'com.github.GTMEGA:StructureLib:0237ab2549:deobf'
+    api 'eu.usrv:YAMCore:1.7.10-0.5.79:deobf'
     //endregion Hard
 
     //region Compile
     // NEI
-    api'com.github.GTNewHorizons:NotEnoughItems:master-SNAPSHOT:dev'
-    api("com.github.GTNewHorizons:CodeChickenCore:master-SNAPSHOT:dev") {
-        transitive = true
-    }
+    api 'com.github.GTNewHorizons:NotEnoughItems:2.3.12-GTNH:dev'
+    api 'com.github.GTNewHorizons:CodeChickenLib:1.1.5.4:dev'
     // OpenComputers 1.7.7
     compileOnly(deobfCurse('opencomputers-223008:3965933'))
     // ComputerCraft 1.75
