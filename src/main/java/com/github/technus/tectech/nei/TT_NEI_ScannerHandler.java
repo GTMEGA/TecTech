@@ -25,7 +25,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fluids.FluidStack;
-import org.lwjgl.opengl.GL11;
+import org.lwjgl.opengl.*;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -180,7 +180,7 @@ public class TT_NEI_ScannerHandler extends TemplateRecipeHandler {
     }
 
     @Override
-    public List<String> handleItemTooltip(GuiRecipe gui, ItemStack aStack, List<String> currenttip, int aRecipeIndex) {
+    public List<String> handleItemTooltip(GuiRecipe<?> gui, ItemStack aStack, List<String> currenttip, int aRecipeIndex) {
         TemplateRecipeHandler.CachedRecipe tObject = arecipes.get(aRecipeIndex);
         if (tObject instanceof CachedDefaultRecipe) {
             CachedDefaultRecipe tRecipe = (CachedDefaultRecipe) tObject;
@@ -189,7 +189,7 @@ public class TT_NEI_ScannerHandler extends TemplateRecipeHandler {
                     if (!(tStack instanceof FixedPositionedStack) || ((FixedPositionedStack) tStack).mChance <= 0 || ((FixedPositionedStack) tStack).mChance == 10000) {
                         break;
                     }
-                    currenttip.add(trans("150","Chance: ") + ((FixedPositionedStack) tStack).mChance / 100 + '.' + (((FixedPositionedStack) tStack).mChance % 100 < 10 ? "0" + ((FixedPositionedStack) tStack).mChance % 100 : Integer.valueOf(((FixedPositionedStack) tStack).mChance % 100)) + '%');
+                    currenttip.add(trans("150", "Chance: ") + ((FixedPositionedStack) tStack).mChance / 100 + '.' + (((FixedPositionedStack) tStack).mChance % 100 < 10 ? "0" + ((FixedPositionedStack) tStack).mChance % 100 : Integer.valueOf(((FixedPositionedStack) tStack).mChance % 100)) + '%');
                     break;
                 }
             }
