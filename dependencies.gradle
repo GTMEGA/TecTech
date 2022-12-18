@@ -15,7 +15,7 @@ dependencies {
     //region Hard
     // GregTech
     api 'net.industrial-craft:industrialcraft-2:2.2.828-experimental:dev'
-    api('gtmega:gt5u-mc1.7.10:5.28.25-mega-1.0.9rc1-0:dev') {
+    api('gtmega:gt5u-mc1.7.10:5.29.0-mega:dev') {
         transitive = false
     }
     api 'com.github.GTMEGA:StructureLib:0237ab2549:deobf'
