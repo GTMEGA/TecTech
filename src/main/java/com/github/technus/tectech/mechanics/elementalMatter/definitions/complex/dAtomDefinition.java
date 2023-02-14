@@ -2,7 +2,6 @@ package com.github.technus.tectech.mechanics.elementalMatter.definitions.complex
 
 import com.github.technus.tectech.Reference;
 import com.github.technus.tectech.TecTech;
-import com.github.technus.tectech.compatibility.gtpp.GtppAtomLoader;
 import com.github.technus.tectech.mechanics.elementalMatter.core.cElementalDecay;
 import com.github.technus.tectech.mechanics.elementalMatter.core.cElementalDefinitionStackMap;
 import com.github.technus.tectech.mechanics.elementalMatter.core.cElementalMutableDefinitionStackMap;
@@ -1622,10 +1621,6 @@ public final class dAtomDefinition extends cElementalDefinition {
             if (DEBUG_MODE) {
                 e.printStackTrace();
             }
-        }
-
-        if(Loader.isModLoaded(Reference.GTPLUSPLUS)) {
-            new GtppAtomLoader().run();
         }
     }
 
