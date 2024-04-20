@@ -3,8 +3,13 @@
 dependencies {
     shadowImplementation("com.github.GTNewHorizons:AVRcore:master-SNAPSHOT")
 
-    compile("gtmega:gt5u-mc1.7.10:5.28.23-gtmega:dev")
+    implementation("net.industrial-craft:industrialcraft-2:2.2.828-experimental:dev")
+    compile("gtmega:gt5u-mc1.7.10:5.33.0-mega:dev")
+    implementation("mega:structurelib-mc1.7.10:1.1.2:dev")
     compile("eu.usrv:YAMCore:1.7.10-0.5.79:deobf")
+
+    implementation("codechicken:notenoughitems-mc1.7.10:2.2.0-mega:dev")
+    implementation("codechicken:codechickenlib-mc1.7.10:1.1.4-gtmega:dev")
 
     /*compile("com.github.GTNewHorizons:NotEnoughItems:master-SNAPSHOT:dev") {  // Transitive by GT5-Unofficial
         transitive = false
