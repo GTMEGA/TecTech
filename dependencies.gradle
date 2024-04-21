@@ -4,8 +4,8 @@ dependencies {
     shadowImplementation("com.github.GTNewHorizons:AVRcore:master-SNAPSHOT")
 
     implementation("net.industrial-craft:industrialcraft-2:2.2.828-experimental:dev")
-    compile("gtmega:gt5u-mc1.7.10:5.33.0-mega:dev")
-    implementation("mega:structurelib-mc1.7.10:1.1.2:dev")
+    implementation("gtmega:gt5u-mc1.7.10:5.35.1-mega:dev")
+    implementation("mega:structurelib-mc1.7.10:1.2.0-mega:dev")
     compile("eu.usrv:YAMCore:1.7.10-0.5.79:deobf")
 
     implementation("codechicken:notenoughitems-mc1.7.10:2.2.0-mega:dev")
