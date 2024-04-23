@@ -131,67 +131,67 @@ public class MachineLoader implements Runnable {
         // ===================================================================================================
 
         eM_energyMulti4_IV.set(new GT_MetaTileEntity_Hatch_EnergyMulti(
-                15100, "hatch.energymulti04.tier.05", "IV 4A Energy Hatch", 5, 4).getStackForm(1L));
+                15100, "hatch.energymulti04.tier.05", "IV Energy Input Hatch 4A", 5, 4).getStackForm(1L));
         eM_energyMulti16_IV.set(new GT_MetaTileEntity_Hatch_EnergyMulti(
-                15110, "hatch.energymulti16.tier.05", "IV 16A Energy Hatch", 5, 16).getStackForm(1L));
+                15110, "hatch.energymulti16.tier.05", "IV Energy Input Hatch 16A", 5, 16).getStackForm(1L));
         eM_energyMulti64_IV.set(new GT_MetaTileEntity_Hatch_EnergyMulti(
-                15120, "hatch.energymulti64.tier.05", "IV 64A Energy Hatch", 5, 64).getStackForm(1L));
+                15120, "hatch.energymulti64.tier.05", "IV Energy Input Hatch 64A", 5, 64).getStackForm(1L));
 
         eM_energyMulti4_LuV.set(new GT_MetaTileEntity_Hatch_EnergyMulti(
-                15101, "hatch.energymulti04.tier.06", "LuV 4A Energy Hatch", 6, 4).getStackForm(1L));
+                15101, "hatch.energymulti04.tier.06", "LuV Energy Input Hatch 4A", 6, 4).getStackForm(1L));
         eM_energyMulti16_LuV.set(new GT_MetaTileEntity_Hatch_EnergyMulti(
-                15111, "hatch.energymulti16.tier.06", "LuV 16A Energy Hatch", 6, 16).getStackForm(1L));
+                15111, "hatch.energymulti16.tier.06", "LuV Energy Input Hatch 16A", 6, 16).getStackForm(1L));
         eM_energyMulti64_LuV.set(new GT_MetaTileEntity_Hatch_EnergyMulti(
-                15121, "hatch.energymulti64.tier.06", "LuV 64A Energy Hatch", 6, 64).getStackForm(1L));
+                15121, "hatch.energymulti64.tier.06", "LuV Energy Input Hatch 64A", 6, 64).getStackForm(1L));
 
         eM_energyMulti4_ZPM.set(new GT_MetaTileEntity_Hatch_EnergyMulti(
-                15102, "hatch.energymulti04.tier.07", "ZPM 4A Energy Hatch", 7, 4).getStackForm(1L));
+                15102, "hatch.energymulti04.tier.07", "ZPM Energy Input Hatch 4A", 7, 4).getStackForm(1L));
         eM_energyMulti16_ZPM.set(new GT_MetaTileEntity_Hatch_EnergyMulti(
-                15112, "hatch.energymulti16.tier.07", "ZPM 16A Energy Hatch", 7, 16).getStackForm(1L));
+                15112, "hatch.energymulti16.tier.07", "ZPM Energy Input Hatch 16A", 7, 16).getStackForm(1L));
         eM_energyMulti64_ZPM.set(new GT_MetaTileEntity_Hatch_EnergyMulti(
-                15122, "hatch.energymulti64.tier.07", "ZPM 64A Energy Hatch", 7, 64).getStackForm(1L));
+                15122, "hatch.energymulti64.tier.07", "ZPM Energy Input Hatch 64A", 7, 64).getStackForm(1L));
 
         eM_energyMulti4_UV.set(new GT_MetaTileEntity_Hatch_EnergyMulti(
-                15103, "hatch.energymulti04.tier.08", "UV 4A Energy Hatch", 8, 4).getStackForm(1L));
+                15103, "hatch.energymulti04.tier.08", "UV Energy Input Hatch 4A", 8, 4).getStackForm(1L));
         eM_energyMulti16_UV.set(new GT_MetaTileEntity_Hatch_EnergyMulti(
-                15113, "hatch.energymulti16.tier.08", "UV 16A Energy Hatch", 8, 16).getStackForm(1L));
+                15113, "hatch.energymulti16.tier.08", "UV Energy Input Hatch 16A", 8, 16).getStackForm(1L));
         eM_energyMulti64_UV.set(new GT_MetaTileEntity_Hatch_EnergyMulti(
-                15123, "hatch.energymulti64.tier.08", "UV 64A Energy Hatch", 8, 64).getStackForm(1L));
+                15123, "hatch.energymulti64.tier.08", "UV Energy Input Hatch 64A", 8, 64).getStackForm(1L));
 
         eM_energyMulti4_UHV.set(new GT_MetaTileEntity_Hatch_EnergyMulti(
-                15104, "hatch.energymulti04.tier.09", "UHV 4A Energy Hatch", 9, 4).getStackForm(1L));
+                15104, "hatch.energymulti04.tier.09", "UHV Energy Input Hatch 4A", 9, 4).getStackForm(1L));
         eM_energyMulti16_UHV.set(new GT_MetaTileEntity_Hatch_EnergyMulti(
-                15114, "hatch.energymulti16.tier.09", "UHV 16A Energy Hatch", 9, 16).getStackForm(1L));
+                15114, "hatch.energymulti16.tier.09", "UHV Energy Input Hatch 16A", 9, 16).getStackForm(1L));
         eM_energyMulti64_UHV.set(new GT_MetaTileEntity_Hatch_EnergyMulti(
-                15124, "hatch.energymulti64.tier.09", "UHV 64A Energy Hatch", 9, 64).getStackForm(1L));
+                15124, "hatch.energymulti64.tier.09", "UHV Energy Input Hatch 64A", 9, 64).getStackForm(1L));
 
         eM_energyMulti4_UEV.set(new GT_MetaTileEntity_Hatch_EnergyMulti(
-                15105, "hatch.energymulti04.tier.10", "UEV 4A Energy Hatch", 10, 4).getStackForm(1L));
+                15105, "hatch.energymulti04.tier.10", "UEV Energy Input Hatch 4A", 10, 4).getStackForm(1L));
         eM_energyMulti16_UEV.set(new GT_MetaTileEntity_Hatch_EnergyMulti(
-                15115, "hatch.energymulti16.tier.10", "UEV 16A Energy Hatch", 10, 16).getStackForm(1L));
+                15115, "hatch.energymulti16.tier.10", "UEV Energy Input Hatch 16A", 10, 16).getStackForm(1L));
         eM_energyMulti64_UEV.set(new GT_MetaTileEntity_Hatch_EnergyMulti(
-                15125, "hatch.energymulti64.tier.10", "UEV 64A Energy Hatch", 10, 64).getStackForm(1L));
+                15125, "hatch.energymulti64.tier.10", "UEV Energy Input Hatch 64A", 10, 64).getStackForm(1L));
 
         eM_energyMulti4_UIV.set(new GT_MetaTileEntity_Hatch_EnergyMulti(
-                15106, "hatch.energymulti04.tier.11", "UIV 4A Energy Hatch", 11, 4).getStackForm(1L));
+                15106, "hatch.energymulti04.tier.11", "UIV Energy Input Hatch 4A", 11, 4).getStackForm(1L));
         eM_energyMulti16_UIV.set(new GT_MetaTileEntity_Hatch_EnergyMulti(
-                15116, "hatch.energymulti16.tier.11", "UIV 16A Energy Hatch", 11, 16).getStackForm(1L));
+                15116, "hatch.energymulti16.tier.11", "UIV Energy Input Hatch 16A", 11, 16).getStackForm(1L));
         eM_energyMulti64_UIV.set(new GT_MetaTileEntity_Hatch_EnergyMulti(
-                15126, "hatch.energymulti64.tier.11", "UIV 64A Energy Hatch", 11, 64).getStackForm(1L));
+                15126, "hatch.energymulti64.tier.11", "UIV Energy Input Hatch 64A", 11, 64).getStackForm(1L));
 
         eM_energyMulti4_UMV.set(new GT_MetaTileEntity_Hatch_EnergyMulti(
-                15107, "hatch.energymulti04.tier.12", "UMV 4A Energy Hatch", 12, 4).getStackForm(1L));
+                15107, "hatch.energymulti04.tier.12", "UMV Energy Input Hatch 4A", 12, 4).getStackForm(1L));
         eM_energyMulti16_UMV.set(new GT_MetaTileEntity_Hatch_EnergyMulti(
-                15117, "hatch.energymulti16.tier.12", "UMV 16A Energy Hatch", 12, 16).getStackForm(1L));
+                15117, "hatch.energymulti16.tier.12", "UMV Energy Input Hatch 16A", 12, 16).getStackForm(1L));
         eM_energyMulti64_UMV.set(new GT_MetaTileEntity_Hatch_EnergyMulti(
-                15127, "hatch.energymulti64.tier.12", "UMV 64A Energy Hatch", 12, 64).getStackForm(1L));
+                15127, "hatch.energymulti64.tier.12", "UMV Energy Input Hatch 64A", 12, 64).getStackForm(1L));
 
         eM_energyMulti4_UXV.set(new GT_MetaTileEntity_Hatch_EnergyMulti(
-                15108, "hatch.energymulti04.tier.13", "UXV 4A Energy Hatch", 13, 4).getStackForm(1L));
+                15108, "hatch.energymulti04.tier.13", "UXV Energy Input Hatch 4A", 13, 4).getStackForm(1L));
         eM_energyMulti16_UXV.set(new GT_MetaTileEntity_Hatch_EnergyMulti(
-                15118, "hatch.energymulti16.tier.13", "UXV 16A Energy Hatch", 13, 16).getStackForm(1L));
+                15118, "hatch.energymulti16.tier.13", "UXV Energy Input Hatch 16A", 13, 16).getStackForm(1L));
         eM_energyMulti64_UXV.set(new GT_MetaTileEntity_Hatch_EnergyMulti(
-                15128, "hatch.energymulti64.tier.13", "UXV 64A Energy Hatch", 13, 64).getStackForm(1L));
+                15128, "hatch.energymulti64.tier.13", "UXV Energy Input Hatch 64A", 13, 64).getStackForm(1L));
 
         // ===================================================================================================
         // Multi AMP Laser INPUTS
@@ -339,67 +339,67 @@ public class MachineLoader implements Runnable {
         // ===================================================================================================
 
         eM_dynamoMulti4_IV.set(new GT_MetaTileEntity_Hatch_DynamoMulti(
-                15200, "hatch.dynamomulti04.tier.05", "IV 4A Dynamo Hatch", 5, 4).getStackForm(1L));
+                15200, "hatch.dynamomulti04.tier.05", "IV Energy Output Hatch 4A", 5, 4).getStackForm(1L));
         eM_dynamoMulti16_IV.set(new GT_MetaTileEntity_Hatch_DynamoMulti(
-                15210, "hatch.dynamomulti16.tier.05", "IV 16A Dynamo Hatch", 5, 16).getStackForm(1L));
+                15210, "hatch.dynamomulti16.tier.05", "IV Energy Output Hatch 16A", 5, 16).getStackForm(1L));
         eM_dynamoMulti64_IV.set(new GT_MetaTileEntity_Hatch_DynamoMulti(
-                15220, "hatch.dynamomulti64.tier.05", "IV 64A Dynamo Hatch", 5, 64).getStackForm(1L));
+                15220, "hatch.dynamomulti64.tier.05", "IV Energy Output Hatch 64A", 5, 64).getStackForm(1L));
 
         eM_dynamoMulti4_LuV.set(new GT_MetaTileEntity_Hatch_DynamoMulti(
-                15201, "hatch.dynamomulti04.tier.06", "LuV 4A Dynamo Hatch", 6, 4).getStackForm(1L));
+                15201, "hatch.dynamomulti04.tier.06", "LuV Energy Output Hatch 4A", 6, 4).getStackForm(1L));
         eM_dynamoMulti16_LuV.set(new GT_MetaTileEntity_Hatch_DynamoMulti(
-                15211, "hatch.dynamomulti16.tier.06", "LuV 16A Dynamo Hatch", 6, 16).getStackForm(1L));
+                15211, "hatch.dynamomulti16.tier.06", "LuV Energy Output Hatch 16A", 6, 16).getStackForm(1L));
         eM_dynamoMulti64_LuV.set(new GT_MetaTileEntity_Hatch_DynamoMulti(
-                15221, "hatch.dynamomulti64.tier.06", "LuV 64A Dynamo Hatch", 6, 64).getStackForm(1L));
+                15221, "hatch.dynamomulti64.tier.06", "LuV Energy Output Hatch 64A", 6, 64).getStackForm(1L));
 
         eM_dynamoMulti4_ZPM.set(new GT_MetaTileEntity_Hatch_DynamoMulti(
-                15202, "hatch.dynamomulti04.tier.07", "ZPM 4A Dynamo Hatch", 7, 4).getStackForm(1L));
+                15202, "hatch.dynamomulti04.tier.07", "ZPM Energy Output Hatch 4A", 7, 4).getStackForm(1L));
         eM_dynamoMulti16_ZPM.set(new GT_MetaTileEntity_Hatch_DynamoMulti(
-                15212, "hatch.dynamomulti16.tier.07", "ZPM 16A Dynamo Hatch", 7, 16).getStackForm(1L));
+                15212, "hatch.dynamomulti16.tier.07", "ZPM Energy Output Hatch 16A", 7, 16).getStackForm(1L));
         eM_dynamoMulti64_ZPM.set(new GT_MetaTileEntity_Hatch_DynamoMulti(
-                15222, "hatch.dynamomulti64.tier.07", "ZPM 64A Dynamo Hatch", 7, 64).getStackForm(1L));
+                15222, "hatch.dynamomulti64.tier.07", "ZPM Energy Output Hatch 64A", 7, 64).getStackForm(1L));
 
         eM_dynamoMulti4_UV.set(new GT_MetaTileEntity_Hatch_DynamoMulti(
-                15203, "hatch.dynamomulti04.tier.08", "UV 4A Dynamo Hatch", 8, 4).getStackForm(1L));
+                15203, "hatch.dynamomulti04.tier.08", "UV Energy Output Hatch 4A", 8, 4).getStackForm(1L));
         eM_dynamoMulti16_UV.set(new GT_MetaTileEntity_Hatch_DynamoMulti(
-                15213, "hatch.dynamomulti16.tier.08", "UV 16A Dynamo Hatch", 8, 16).getStackForm(1L));
+                15213, "hatch.dynamomulti16.tier.08", "UV Energy Output Hatch 16A", 8, 16).getStackForm(1L));
         eM_dynamoMulti64_UV.set(new GT_MetaTileEntity_Hatch_DynamoMulti(
-                15223, "hatch.dynamomulti64.tier.08", "UV 64A Dynamo Hatch", 8, 64).getStackForm(1L));
+                15223, "hatch.dynamomulti64.tier.08", "UV Energy Output Hatch 64A", 8, 64).getStackForm(1L));
 
         eM_dynamoMulti4_UHV.set(new GT_MetaTileEntity_Hatch_DynamoMulti(
-                15204, "hatch.dynamomulti04.tier.09", "UHV 4A Dynamo Hatch", 9, 4).getStackForm(1L));
+                15204, "hatch.dynamomulti04.tier.09", "UHV Energy Output Hatch 4A", 9, 4).getStackForm(1L));
         eM_dynamoMulti16_UHV.set(new GT_MetaTileEntity_Hatch_DynamoMulti(
-                15214, "hatch.dynamomulti16.tier.09", "UHV 16A Dynamo Hatch", 9, 16).getStackForm(1L));
+                15214, "hatch.dynamomulti16.tier.09", "UHV Energy Output Hatch 16A", 9, 16).getStackForm(1L));
         eM_dynamoMulti64_UHV.set(new GT_MetaTileEntity_Hatch_DynamoMulti(
-                15224, "hatch.dynamomulti64.tier.09", "UHV 64A Dynamo Hatch", 9, 64).getStackForm(1L));
+                15224, "hatch.dynamomulti64.tier.09", "UHV Energy Output Hatch 64A", 9, 64).getStackForm(1L));
 
         eM_dynamoMulti4_UEV.set(new GT_MetaTileEntity_Hatch_DynamoMulti(
-                15205, "hatch.dynamomulti04.tier.10", "UEV 4A Dynamo Hatch", 10, 4).getStackForm(1L));
+                15205, "hatch.dynamomulti04.tier.10", "UEV Energy Output Hatch 4A", 10, 4).getStackForm(1L));
         eM_dynamoMulti16_UEV.set(new GT_MetaTileEntity_Hatch_DynamoMulti(
-                15215, "hatch.dynamomulti16.tier.10", "UEV 16A Dynamo Hatch", 10, 16).getStackForm(1L));
+                15215, "hatch.dynamomulti16.tier.10", "UEV Energy Output Hatch 16A", 10, 16).getStackForm(1L));
         eM_dynamoMulti64_UEV.set(new GT_MetaTileEntity_Hatch_DynamoMulti(
-                15225, "hatch.dynamomulti64.tier.10", "UEV 64A Dynamo Hatch", 10, 64).getStackForm(1L));
+                15225, "hatch.dynamomulti64.tier.10", "UEV Energy Output Hatch 64A", 10, 64).getStackForm(1L));
 
         eM_dynamoMulti4_UIV.set(new GT_MetaTileEntity_Hatch_DynamoMulti(
-                15206, "hatch.dynamomulti04.tier.11", "UIV 4A Dynamo Hatch", 11, 4).getStackForm(1L));
+                15206, "hatch.dynamomulti04.tier.11", "UIV Energy Output Hatch 4A", 11, 4).getStackForm(1L));
         eM_dynamoMulti16_UIV.set(new GT_MetaTileEntity_Hatch_DynamoMulti(
-                15216, "hatch.dynamomulti16.tier.11", "UIV 16A Dynamo Hatch", 11, 16).getStackForm(1L));
+                15216, "hatch.dynamomulti16.tier.11", "UIV Energy Output Hatch 16A", 11, 16).getStackForm(1L));
         eM_dynamoMulti64_UIV.set(new GT_MetaTileEntity_Hatch_DynamoMulti(
-                15226, "hatch.dynamomulti64.tier.11", "UIV 64A Dynamo Hatch", 11, 64).getStackForm(1L));
+                15226, "hatch.dynamomulti64.tier.11", "UIV Energy Output Hatch 64A", 11, 64).getStackForm(1L));
 
         eM_dynamoMulti4_UMV.set(new GT_MetaTileEntity_Hatch_DynamoMulti(
-                15207, "hatch.dynamomulti04.tier.12", "UMV 4A Dynamo Hatch", 12, 4).getStackForm(1L));
+                15207, "hatch.dynamomulti04.tier.12", "UMV Energy Output Hatch 4A", 12, 4).getStackForm(1L));
         eM_dynamoMulti16_UMV.set(new GT_MetaTileEntity_Hatch_DynamoMulti(
-                15217, "hatch.dynamomulti16.tier.12", "UMV 16A Dynamo Hatch", 12, 16).getStackForm(1L));
+                15217, "hatch.dynamomulti16.tier.12", "UMV Energy Output Hatch 16A", 12, 16).getStackForm(1L));
         eM_dynamoMulti64_UMV.set(new GT_MetaTileEntity_Hatch_DynamoMulti(
-                15227, "hatch.dynamomulti64.tier.12", "UMV 64A Dynamo Hatch", 12, 64).getStackForm(1L));
+                15227, "hatch.dynamomulti64.tier.12", "UMV Energy Output Hatch 64A", 12, 64).getStackForm(1L));
 
         eM_dynamoMulti4_UXV.set(new GT_MetaTileEntity_Hatch_DynamoMulti(
-                15208, "hatch.dynamomulti04.tier.13", "UXV 4A Dynamo Hatch", 13, 4).getStackForm(1L));
+                15208, "hatch.dynamomulti04.tier.13", "UXV Energy Output Hatch 4A", 13, 4).getStackForm(1L));
         eM_dynamoMulti16_UXV.set(new GT_MetaTileEntity_Hatch_DynamoMulti(
-                15218, "hatch.dynamomulti16.tier.13", "UXV 16A Dynamo Hatch", 13, 16).getStackForm(1L));
+                15218, "hatch.dynamomulti16.tier.13", "UXV Energy Output Hatch 16A", 13, 16).getStackForm(1L));
         eM_dynamoMulti64_UXV.set(new GT_MetaTileEntity_Hatch_DynamoMulti(
-                15228, "hatch.dynamomulti64.tier.13", "UXV 64A Dynamo Hatch", 13, 64).getStackForm(1L));
+                15228, "hatch.dynamomulti64.tier.13", "UXV Energy Output Hatch 64A", 13, 64).getStackForm(1L));
 
         // ===================================================================================================
         // Multi AMP Laser OUTPUTS
@@ -621,15 +621,15 @@ public class MachineLoader implements Runnable {
         // Buck Converters
         // ===================================================================================================
 
-        Machine_BuckConverter_IV.set(new GT_MetaTileEntity_BuckConverter(15485, "machine.tt.buck.05", "Insane Buck Converter", 5).getStackForm(1L));
-        Machine_BuckConverter_LuV.set(new GT_MetaTileEntity_BuckConverter(15486, "machine.tt.buck.06", "Ludicrous Buck Converter", 6).getStackForm(1L));
+        Machine_BuckConverter_IV.set(new GT_MetaTileEntity_BuckConverter(15485, "machine.tt.buck.05", "IV Buck Converter", 5).getStackForm(1L));
+        Machine_BuckConverter_LuV.set(new GT_MetaTileEntity_BuckConverter(15486, "machine.tt.buck.06", "LuV Buck Converter", 6).getStackForm(1L));
         Machine_BuckConverter_ZPM.set(new GT_MetaTileEntity_BuckConverter(15487, "machine.tt.buck.07", "ZPM Voltage Buck Converter", 7).getStackForm(1L));
-        Machine_BuckConverter_UV.set(new GT_MetaTileEntity_BuckConverter(15488, "machine.tt.buck.08", "Ultimate Power Buck Converter", 8).getStackForm(1L));
-        Machine_BuckConverter_UHV.set(new GT_MetaTileEntity_BuckConverter(15489, "machine.tt.buck.09", "Highly Ultimate Buck Converter", 9).getStackForm(1L));
-        Machine_BuckConverter_UEV.set(new GT_MetaTileEntity_BuckConverter(15490, "machine.tt.buck.10", "Extremely Ultimate Buck Converter", 10).getStackForm(1L));
-        Machine_BuckConverter_UIV.set(new GT_MetaTileEntity_BuckConverter(15491, "machine.tt.buck.11", "Insanely Ultimate Buck Converter", 11).getStackForm(1L));
-        Machine_BuckConverter_UMV.set(new GT_MetaTileEntity_BuckConverter(15492, "machine.tt.buck.12", "Mega Ultimate Buck Converter", 12).getStackForm(1L));
-        Machine_BuckConverter_UXV.set(new GT_MetaTileEntity_BuckConverter(15493, "machine.tt.buck.13", "Extended Mega Ultimate Buck Converter", 13).getStackForm(1L));
+        Machine_BuckConverter_UV.set(new GT_MetaTileEntity_BuckConverter(15488, "machine.tt.buck.08", "UV Power Buck Converter", 8).getStackForm(1L));
+        Machine_BuckConverter_UHV.set(new GT_MetaTileEntity_BuckConverter(15489, "machine.tt.buck.09", "UHV Buck Converter", 9).getStackForm(1L));
+        Machine_BuckConverter_UEV.set(new GT_MetaTileEntity_BuckConverter(15490, "machine.tt.buck.10", "UEV Buck Converter", 10).getStackForm(1L));
+        Machine_BuckConverter_UIV.set(new GT_MetaTileEntity_BuckConverter(15491, "machine.tt.buck.11", "UIV Buck Converter", 11).getStackForm(1L));
+        Machine_BuckConverter_UMV.set(new GT_MetaTileEntity_BuckConverter(15492, "machine.tt.buck.12", "UMV Buck Converter", 12).getStackForm(1L));
+        Machine_BuckConverter_UXV.set(new GT_MetaTileEntity_BuckConverter(15493, "machine.tt.buck.13", "UXV Buck Converter", 13).getStackForm(1L));
 
         // ===================================================================================================
         // Tesla Transceiver
@@ -664,7 +664,7 @@ public class MachineLoader implements Runnable {
         // ===================================================================================================
         Machine_DebugPollutor.set(new GT_MetaTileEntity_DebugPollutor(15495, "debug.tt.pollutor", "Debug Pollution Generator", 15).getStackForm(1));
         hatch_CreativeData.set(new GT_MetaTileEntity_Hatch_CreativeData(15496, "debug.tt.data", "Debug Data Hatch", 15).getStackForm(1));
-        hatch_CreativeMaintenance.set(new GT_MetaTileEntity_Hatch_CreativeMaintenance(15497, "debug.tt.maintenance", "Auto-Taping Maintenance Hatch", 15).getStackForm(1L));
+        hatch_CreativeMaintenance.set(new GT_MetaTileEntity_Hatch_CreativeMaintenance(15497, "debug.tt.maintenance", "Nanite Maintenance Hatch", 15).getStackForm(1L));
         Machine_DebugGenny.set(new GT_MetaTileEntity_DebugPowerGenerator(15498, "debug.tt.genny", "Debug Power Generator", 15).getStackForm(1L));
         Machine_DebugWriter.set(new GT_MetaTileEntity_DebugStructureWriter(15499, "debug.tt.writer", "Debug Structure Writer", 15).getStackForm(1L));
         UnusedStuff.set(new ItemStack(Blocks.air));
