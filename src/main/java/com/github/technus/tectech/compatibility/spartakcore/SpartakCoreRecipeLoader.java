@@ -38,22 +38,22 @@ public class SpartakCoreRecipeLoader implements Runnable {
         //region pipes
 
         //Data
-        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{
-                ItemList.Circuit_Parts_GlassFiber.get(8),
-                GT_OreDictUnificator.get(OrePrefixes.foil, Materials.Silver, 8)
-        }, Materials.Polytetrafluoroethylene.getMolten(144), CustomItemList.DATApipe.get(1), 200, 30720);
+//        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{
+//                ItemList.Circuit_Parts_GlassFiber.get(8),
+//                GT_OreDictUnificator.get(OrePrefixes.foil, Materials.Silver, 8)
+//        }, Materials.Polytetrafluoroethylene.getMolten(144), CustomItemList.DATApipe.get(1), 200, 30720);
 
         //endregion
 
         //Tunnel
-        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{
-                CustomItemList.DATApipe.get(1),
-                GT_OreDictUnificator.get(OrePrefixes.plateDouble, Materials.Osmiridium, 4),
-                GT_OreDictUnificator.get(OrePrefixes.foil, Materials.Osmium, 4),
-                GT_OreDictUnificator.get(OrePrefixes.wireGt02, Materials.Superconductor, 2),
-                ItemList.Field_Generator_MV.get(1),
-                ItemList.Circuit_Quantummainframe.get(1)
-        }, Materials.Osmium.getMolten(288), CustomItemList.EMpipe.get(1), 400, 500000);
+//        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{
+//                CustomItemList.DATApipe.get(1),
+//                GT_OreDictUnificator.get(OrePrefixes.plateDouble, Materials.Osmiridium, 4),
+//                GT_OreDictUnificator.get(OrePrefixes.foil, Materials.Osmium, 4),
+//                GT_OreDictUnificator.get(OrePrefixes.wireGt02, Materials.Superconductor, 2),
+//                ItemList.Field_Generator_MV.get(1),
+//                ItemList.Circuit_Quantummainframe.get(1)
+//        }, Materials.Osmium.getMolten(288), CustomItemList.EMpipe.get(1), 400, 500000);
         
         //Laser
         GT_Values.RA.addAssemblerRecipe(new ItemStack[]{
@@ -67,22 +67,22 @@ public class SpartakCoreRecipeLoader implements Runnable {
         //region casing
 
         //High Power Casing
-        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{
-                GT_OreDictUnificator.get(OrePrefixes.frameGt, Materials.Iridium, 1),
-                GT_OreDictUnificator.get(OrePrefixes.plateDouble, Materials.Iridium, 6),
-                GT_OreDictUnificator.get(OrePrefixes.circuit, Materials.Master, 1),
-                GT_OreDictUnificator.get(OrePrefixes.wireFine, Materials.Cobalt, 16),
-                GT_OreDictUnificator.get(OrePrefixes.wireFine, Materials.Copper, 16),
-                GT_OreDictUnificator.get(OrePrefixes.wireGt02, Materials.NiobiumTitanium, 2)
-        }, Materials.TungstenSteel.getMolten(576), CustomItemList.eM_Power.get(1), 100, 30720);
+//        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{
+//                GT_OreDictUnificator.get(OrePrefixes.frameGt, Materials.Iridium, 1),
+//                GT_OreDictUnificator.get(OrePrefixes.plateDouble, Materials.Iridium, 6),
+//                GT_OreDictUnificator.get(OrePrefixes.circuit, Materials.Master, 1),
+//                GT_OreDictUnificator.get(OrePrefixes.wireFine, Materials.Cobalt, 16),
+//                GT_OreDictUnificator.get(OrePrefixes.wireFine, Materials.Copper, 16),
+//                GT_OreDictUnificator.get(OrePrefixes.wireGt02, Materials.NiobiumTitanium, 2)
+//        }, Materials.TungstenSteel.getMolten(576), CustomItemList.eM_Power.get(1), 100, 30720);
 
         //Computer Casing
-        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{
-                CustomItemList.eM_Power.get(1),
-                GT_OreDictUnificator.get(OrePrefixes.plate, Materials.StainlessSteel, 8),
-                GT_OreDictUnificator.get(OrePrefixes.circuit, Materials.Ultimate, 1),
-                GT_OreDictUnificator.get(OrePrefixes.wireGt02, Materials.NiobiumTitanium, 2)
-        }, Materials.Aluminium.getMolten(1296), CustomItemList.eM_Computer_Casing.get(1), 200, 122880);
+//        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{
+//                CustomItemList.eM_Power.get(1),
+//                GT_OreDictUnificator.get(OrePrefixes.plate, Materials.StainlessSteel, 8),
+//                GT_OreDictUnificator.get(OrePrefixes.circuit, Materials.Ultimate, 1),
+//                GT_OreDictUnificator.get(OrePrefixes.wireGt02, Materials.NiobiumTitanium, 2)
+//        }, Materials.Aluminium.getMolten(1296), CustomItemList.eM_Computer_Casing.get(1), 200, 122880);
         //Computer Vent Casing
         GT_Values.RA.addAssemblerRecipe(new ItemStack[]{
                 GT_OreDictUnificator.get(OrePrefixes.frameGt, Materials.StainlessSteel, 1),
@@ -93,13 +93,13 @@ public class SpartakCoreRecipeLoader implements Runnable {
                 GT_OreDictUnificator.get(OrePrefixes.wireGt01, getOrDefault("SuperconductorIV",Materials.Superconductor), 1)
         }, Materials.SolderingAlloy.getMolten(1296), CustomItemList.eM_Computer_Vent.get(1), 100, 1920);
         //Advanced Computer Casing
-        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{
-                CustomItemList.eM_Computer_Casing.get(1),
-                GT_OreDictUnificator.get(OrePrefixes.circuit, Materials.Ultimate, 1),
-                GT_OreDictUnificator.get(OrePrefixes.wireFine, Materials.Cobalt, 64),
-                GT_OreDictUnificator.get(OrePrefixes.wireFine, Materials.Electrum, 64),
-                GT_OreDictUnificator.get(OrePrefixes.wireGt02, getOrDefault("SuperconductorLuV",Materials.Superconductor), 4)
-        }, Materials.Iridium.getMolten(1296), CustomItemList.eM_Computer_Bus.get(1), 200, 122880);
+//        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{
+//                CustomItemList.eM_Computer_Casing.get(1),
+//                GT_OreDictUnificator.get(OrePrefixes.circuit, Materials.Ultimate, 1),
+//                GT_OreDictUnificator.get(OrePrefixes.wireFine, Materials.Cobalt, 64),
+//                GT_OreDictUnificator.get(OrePrefixes.wireFine, Materials.Electrum, 64),
+//                GT_OreDictUnificator.get(OrePrefixes.wireGt02, getOrDefault("SuperconductorLuV",Materials.Superconductor), 4)
+//        }, Materials.Iridium.getMolten(1296), CustomItemList.eM_Computer_Bus.get(1), 200, 122880);
 
         //Molecular Casing
         GT_Values.RA.addAssemblerRecipe(new ItemStack[]{
@@ -424,61 +424,61 @@ public class SpartakCoreRecipeLoader implements Runnable {
         GT_Values.RA.addAssemblerRecipe(new ItemStack[]{ItemList.Hull_UV.get(1), GT_OreDictUnificator.get(OrePrefixes.lens, Materials.Diamond, 64), ItemList.Sensor_UV.get(64), ItemList.Electric_Pump_UV.get(64), GT_OreDictUnificator.get(OrePrefixes.wireGt16, Materials.NaquadahAlloy, 16), GT_Utility.getIntegratedCircuit(7)}, null, CustomItemList.eM_energyTunnel7_UV.get(1), 64000, 500000);
 
         //Data Input
-        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{
-                CustomItemList.eM_Computer_Casing.get(1),
-                ItemList.Hatch_Input_Bus_LuV.get(1),
-                ItemList.Circuit_Crystalcomputer.get(1),
-                CustomItemList.DATApipe.get(2)
-        }, Materials.Iridium.getMolten(1296), CustomItemList.dataIn_Hatch.get(1), 200, 122880);
+//        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{
+//                CustomItemList.eM_Computer_Casing.get(1),
+//                ItemList.Hatch_Input_Bus_LuV.get(1),
+//                ItemList.Circuit_Crystalcomputer.get(1),
+//                CustomItemList.DATApipe.get(2)
+//        }, Materials.Iridium.getMolten(1296), CustomItemList.dataIn_Hatch.get(1), 200, 122880);
         //Data Output
-        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{
-                CustomItemList.eM_Computer_Casing.get(1),
-                ItemList.Hatch_Output_Bus_LuV.get(1),
-                ItemList.Circuit_Crystalcomputer.get(1),
-                CustomItemList.DATApipe.get(2)
-        }, Materials.Iridium.getMolten(1296), CustomItemList.dataOut_Hatch.get(1), 200, 122880);
+//        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{
+//                CustomItemList.eM_Computer_Casing.get(1),
+//                ItemList.Hatch_Output_Bus_LuV.get(1),
+//                ItemList.Circuit_Crystalcomputer.get(1),
+//                CustomItemList.DATApipe.get(2)
+//        }, Materials.Iridium.getMolten(1296), CustomItemList.dataOut_Hatch.get(1), 200, 122880);
 
         //Rack
-        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{
-                CustomItemList.eM_Computer_Bus.get(1),
-                ItemList.Hatch_Input_Bus_ZPM.get(1),
-                ItemList.Circuit_Crystalcomputer.get(2),
-                CustomItemList.DATApipe.get(4)
-        }, Materials.Iridium.getMolten(1296), CustomItemList.rack_Hatch.get(1), 800, 122880);
+//        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{
+//                CustomItemList.eM_Computer_Bus.get(1),
+//                ItemList.Hatch_Input_Bus_ZPM.get(1),
+//                ItemList.Circuit_Crystalcomputer.get(2),
+//                CustomItemList.DATApipe.get(4)
+//        }, Materials.Iridium.getMolten(1296), CustomItemList.rack_Hatch.get(1), 800, 122880);
 
         //Object Holder
-        GT_Values.RA.addAssemblylineRecipe(ItemList.Hatch_Input_Bus_ZPM.get(1), 10000, new Object[]{
-                ItemList.Hatch_Input_Bus_ZPM.get(1),
-                CustomItemList.eM_Computer_Bus.get(1),
-                ItemList.Emitter_ZPM.get(8),
-                ItemList.Robot_Arm_ZPM.get(1),
-                ItemList.Electric_Motor_ZPM.get(2),
-                new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.circuit, Materials.Superconductor, 1)},
-                new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.cableGt02, Materials.Naquadah, 2)},
-                new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.wireFine, Materials.Naquadah, 16)},
-                CustomItemList.DATApipe.get(2),
-        }, new FluidStack[]{
-                Materials.UUMatter.getFluid(500),
-                Materials.Iridium.getMolten(1000),
-                new FluidStack(FluidRegistry.getFluid("ic2coolant"), 1000)
-        }, CustomItemList.holder_Hatch.get(1), 1200, 100000);
+//        GT_Values.RA.addAssemblylineRecipe(ItemList.Hatch_Input_Bus_ZPM.get(1), 10000, new Object[]{
+//                ItemList.Hatch_Input_Bus_ZPM.get(1),
+//                CustomItemList.eM_Computer_Bus.get(1),
+//                ItemList.Emitter_ZPM.get(8),
+//                ItemList.Robot_Arm_ZPM.get(1),
+//                ItemList.Electric_Motor_ZPM.get(2),
+//                new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.circuit, Materials.Superconductor, 1)},
+//                new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.cableGt02, Materials.Naquadah, 2)},
+//                new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.wireFine, Materials.Naquadah, 16)},
+//                CustomItemList.DATApipe.get(2),
+//        }, new FluidStack[]{
+//                Materials.UUMatter.getFluid(500),
+//                Materials.Iridium.getMolten(1000),
+//                new FluidStack(FluidRegistry.getFluid("ic2coolant"), 1000)
+//        }, CustomItemList.holder_Hatch.get(1), 1200, 100000);
 
         //Parameterizer
-        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{
-                CustomItemList.eM_Computer_Casing.get(1),
-                ItemList.Circuit_Masterquantumcomputer.get(1),
-                CustomItemList.DATApipe.get(4),
-                ItemList.Cover_Screen.get(1 ),
-                new ItemStack(Blocks.stone_button, 16),
-        }, Materials.Iridium.getMolten(2592), CustomItemList.Parametrizer_Hatch.get(1), 800, 122880);
+//        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{
+//                CustomItemList.eM_Computer_Casing.get(1),
+//                ItemList.Circuit_Masterquantumcomputer.get(1),
+//                CustomItemList.DATApipe.get(4),
+//                ItemList.Cover_Screen.get(1 ),
+//                new ItemStack(Blocks.stone_button, 16),
+//        }, Materials.Iridium.getMolten(2592), CustomItemList.Parametrizer_Hatch.get(1), 800, 122880);
         //Uncertainty
-        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{
-                CustomItemList.eM_Computer_Casing.get(1),
-                ItemList.Circuit_Ultimatecrystalcomputer.get(1),
-                CustomItemList.DATApipe.get(16),
-                ItemList.Cover_Screen.get(1 ),
-                new ItemStack(Blocks.stone_button, 16),
-        }, Materials.Iridium.getMolten(2592), CustomItemList.Uncertainty_Hatch.get(1), 1200, 122880);
+//        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{
+//                CustomItemList.eM_Computer_Casing.get(1),
+//                ItemList.Circuit_Ultimatecrystalcomputer.get(1),
+//                CustomItemList.DATApipe.get(16),
+//                ItemList.Cover_Screen.get(1 ),
+//                new ItemStack(Blocks.stone_button, 16),
+//        }, Materials.Iridium.getMolten(2592), CustomItemList.Uncertainty_Hatch.get(1), 1200, 122880);
 
         //Elemental Input
         GT_Values.RA.addAssemblerRecipe(new ItemStack[]{
@@ -508,100 +508,100 @@ public class SpartakCoreRecipeLoader implements Runnable {
         //region multi blocks
 
         //Microwave Grinder
-        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{
-                ItemList.Machine_HV_Microwave.get(1),
-                GT_OreDictUnificator.get(OrePrefixes.plate, Materials.StainlessSteel, 4),
-                GT_OreDictUnificator.get(OrePrefixes.circuit, Materials.Advanced, 4),
-                GT_OreDictUnificator.get(OrePrefixes.wireFine, Materials.AnnealedCopper, 16),
-                ItemList.Upgrade_Overclocker.get(4),
-        }, Materials.Copper.getMolten(576), CustomItemList.Machine_Multi_Microwave.get(1), 800, 480);
+//        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{
+//                ItemList.Machine_HV_Microwave.get(1),
+//                GT_OreDictUnificator.get(OrePrefixes.plate, Materials.StainlessSteel, 4),
+//                GT_OreDictUnificator.get(OrePrefixes.circuit, Materials.Advanced, 4),
+//                GT_OreDictUnificator.get(OrePrefixes.wireFine, Materials.AnnealedCopper, 16),
+//                ItemList.Upgrade_Overclocker.get(4),
+//        }, Materials.Copper.getMolten(576), CustomItemList.Machine_Multi_Microwave.get(1), 800, 480);
 
         //Network Switch
-        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{
-                CustomItemList.Machine_Multi_Transformer.get(1),
-                GT_OreDictUnificator.get(OrePrefixes.circuit, Materials.Master, 4),
-                GT_OreDictUnificator.get(OrePrefixes.wireFine, Materials.Cobalt, 64),
-                GT_OreDictUnificator.get(OrePrefixes.wireFine, Materials.Copper, 64),
-                CustomItemList.DATApipe.get(4),
-        }, Materials.Iridium.getMolten(1296), CustomItemList.Machine_Multi_Switch.get(1), 800, 122880);
+//        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{
+//                CustomItemList.Machine_Multi_Transformer.get(1),
+//                GT_OreDictUnificator.get(OrePrefixes.circuit, Materials.Master, 4),
+//                GT_OreDictUnificator.get(OrePrefixes.wireFine, Materials.Cobalt, 64),
+//                GT_OreDictUnificator.get(OrePrefixes.wireFine, Materials.Copper, 64),
+//                CustomItemList.DATApipe.get(4),
+//        }, Materials.Iridium.getMolten(1296), CustomItemList.Machine_Multi_Switch.get(1), 800, 122880);
 
         //Quantum Computer
-        GT_Values.RA.addAssemblylineRecipe(ItemList.Tool_DataOrb.get(1), 20000, new Object[]{
-                CustomItemList.Machine_Multi_Switch.get(1),
-                new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.circuit, Materials.Superconductor, 2)},
-                ItemList.Tool_DataOrb.get(1),
-                ItemList.Cover_Screen.get(1),
-                new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.wireGt04, getOrDefault("SuperconductorUV",Materials.Superconductor), 8)},
-                CustomItemList.DATApipe.get(8),
-        }, new FluidStack[]{
-                Materials.UUMatter.getFluid(1000),
-                Materials.Iridium.getMolten(1296),
-                new FluidStack(FluidRegistry.getFluid("ic2coolant"), 2000),
-                Materials.Hydrogen.getGas(1000),
-        }, CustomItemList.Machine_Multi_Computer.get(1), 12000, 100000);
+//        GT_Values.RA.addAssemblylineRecipe(ItemList.Tool_DataOrb.get(1), 20000, new Object[]{
+//                CustomItemList.Machine_Multi_Switch.get(1),
+//                new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.circuit, Materials.Superconductor, 2)},
+//                ItemList.Tool_DataOrb.get(1),
+//                ItemList.Cover_Screen.get(1),
+//                new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.wireGt04, getOrDefault("SuperconductorUV",Materials.Superconductor), 8)},
+//                CustomItemList.DATApipe.get(8),
+//        }, new FluidStack[]{
+//                Materials.UUMatter.getFluid(1000),
+//                Materials.Iridium.getMolten(1296),
+//                new FluidStack(FluidRegistry.getFluid("ic2coolant"), 2000),
+//                Materials.Hydrogen.getGas(1000),
+//        }, CustomItemList.Machine_Multi_Computer.get(1), 12000, 100000);
 
         //Research Station
-        GT_Values.RA.addAssemblylineRecipe(ItemList.Machine_IV_Scanner.get(1), 80000, new Object[]{
-                CustomItemList.Machine_Multi_Switch.get(1),
-                ItemList.Sensor_ZPM.get(8),
-                new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.circuit, Materials.Superconductor, 4)},
-                ItemList.Field_Generator_ZPM.get(1),
-                ItemList.Electric_Motor_ZPM.get(2),
-                new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.cableGt02, Materials.Naquadah, 4)},
-                new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.wireFine, Materials.Naquadah, 32)},
-                CustomItemList.DATApipe.get(16),
-        }, new FluidStack[]{
-                Materials.UUMatter.getFluid(1000),
-                Materials.Iridium.getMolten(1296),
-                new FluidStack(FluidRegistry.getFluid("ic2coolant"), 2000),
-                Materials.Osmium.getMolten(1296),
-        }, CustomItemList.Machine_Multi_Research.get(1), 12000, 100000);
+//        GT_Values.RA.addAssemblylineRecipe(ItemList.Machine_IV_Scanner.get(1), 80000, new Object[]{
+//                CustomItemList.Machine_Multi_Switch.get(1),
+//                ItemList.Sensor_ZPM.get(8),
+//                new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.circuit, Materials.Superconductor, 4)},
+//                ItemList.Field_Generator_ZPM.get(1),
+//                ItemList.Electric_Motor_ZPM.get(2),
+//                new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.cableGt02, Materials.Naquadah, 4)},
+//                new ItemStack[]{GT_OreDictUnificator.get(OrePrefixes.wireFine, Materials.Naquadah, 32)},
+//                CustomItemList.DATApipe.get(16),
+//        }, new FluidStack[]{
+//                Materials.UUMatter.getFluid(1000),
+//                Materials.Iridium.getMolten(1296),
+//                new FluidStack(FluidRegistry.getFluid("ic2coolant"), 2000),
+//                Materials.Osmium.getMolten(1296),
+//        }, CustomItemList.Machine_Multi_Research.get(1), 12000, 100000);
 
         //Matter Junction
-        TT_recipeAdder.addResearchableAssemblylineRecipe(CustomItemList.Machine_Multi_Switch.get(1),
-                8000,32, 500000, 4, new ItemStack[]{
-                CustomItemList.Machine_Multi_Transformer.get(1),
-                GT_OreDictUnificator.get(OrePrefixes.pipeMedium, Materials.Naquadah, 4),
-                ItemList.Robot_Arm_LuV.get(2),
-                ItemList.Electric_Piston_LuV.get(2),
-                ItemList.Circuit_Wetwaresupercomputer.get(2),
-                GT_OreDictUnificator.get(OrePrefixes.wireGt02, Materials.Superconductor, 4),
-        }, new FluidStack[]{
-                Materials.UUMatter.getFluid(1000),
-                Materials.Naquadah.getMolten(1296),
-                new FluidStack(FluidRegistry.getFluid("ic2coolant"), 2000),
-                Materials.Osmium.getMolten(1296),
-        }, CustomItemList.Machine_Multi_EMjunction.get(1), 12000, 100000);
+//        TT_recipeAdder.addResearchableAssemblylineRecipe(CustomItemList.Machine_Multi_Switch.get(1),
+//                8000,32, 500000, 4, new ItemStack[]{
+//                CustomItemList.Machine_Multi_Transformer.get(1),
+//                GT_OreDictUnificator.get(OrePrefixes.pipeMedium, Materials.Naquadah, 4),
+//                ItemList.Robot_Arm_LuV.get(2),
+//                ItemList.Electric_Piston_LuV.get(2),
+//                ItemList.Circuit_Wetwaresupercomputer.get(2),
+//                GT_OreDictUnificator.get(OrePrefixes.wireGt02, Materials.Superconductor, 4),
+//        }, new FluidStack[]{
+//                Materials.UUMatter.getFluid(1000),
+//                Materials.Naquadah.getMolten(1296),
+//                new FluidStack(FluidRegistry.getFluid("ic2coolant"), 2000),
+//                Materials.Osmium.getMolten(1296),
+//        }, CustomItemList.Machine_Multi_EMjunction.get(1), 12000, 100000);
 
         //Matter Quantizer
-        TT_recipeAdder.addResearchableAssemblylineRecipe(ItemList.Hatch_Input_UV.get(1),
-                12000,32, 500000, 6, new ItemStack[]{
-                CustomItemList.Machine_Multi_Transformer.get(1),
-                GT_OreDictUnificator.get(OrePrefixes.pipeMedium, Materials.Naquadah, 4),
-                ItemList.Emitter_UV.get(2),
-                ItemList.Circuit_Wetwaresupercomputer.get(1),
-                GT_OreDictUnificator.get(OrePrefixes.wireGt02, Materials.Superconductor, 2),
-        }, new FluidStack[]{
-                Materials.UUMatter.getFluid(1000),
-                Materials.Naquadah.getMolten(1296),
-                new FluidStack(FluidRegistry.getFluid("ic2coolant"), 2000),
-                Materials.Osmium.getMolten(1296),
-        }, CustomItemList.Machine_Multi_MatterToEM.get(1), 12000, 100000);
+//        TT_recipeAdder.addResearchableAssemblylineRecipe(ItemList.Hatch_Input_UV.get(1),
+//                12000,32, 500000, 6, new ItemStack[]{
+//                CustomItemList.Machine_Multi_Transformer.get(1),
+//                GT_OreDictUnificator.get(OrePrefixes.pipeMedium, Materials.Naquadah, 4),
+//                ItemList.Emitter_UV.get(2),
+//                ItemList.Circuit_Wetwaresupercomputer.get(1),
+//                GT_OreDictUnificator.get(OrePrefixes.wireGt02, Materials.Superconductor, 2),
+//        }, new FluidStack[]{
+//                Materials.UUMatter.getFluid(1000),
+//                Materials.Naquadah.getMolten(1296),
+//                new FluidStack(FluidRegistry.getFluid("ic2coolant"), 2000),
+//                Materials.Osmium.getMolten(1296),
+//        }, CustomItemList.Machine_Multi_MatterToEM.get(1), 12000, 100000);
 
         //Matter DeQuantizer
-        TT_recipeAdder.addResearchableAssemblylineRecipe(ItemList.Hatch_Output_UV.get(1),
-                12000,32, 500000, 6, new ItemStack[]{
-                CustomItemList.Machine_Multi_Transformer.get(1),
-                GT_OreDictUnificator.get(OrePrefixes.pipeMedium, Materials.Naquadah, 4),
-                ItemList.Sensor_UV.get(2),
-                ItemList.Circuit_Wetwaresupercomputer.get(1),
-                GT_OreDictUnificator.get(OrePrefixes.wireGt02, Materials.Superconductor, 2),
-        }, new FluidStack[]{
-                Materials.UUMatter.getFluid(1000),
-                Materials.Naquadah.getMolten(1296),
-                new FluidStack(FluidRegistry.getFluid("ic2coolant"), 2000),
-                Materials.Osmium.getMolten(1296),
-        }, CustomItemList.Machine_Multi_EMToMatter.get(1), 12000, 100000);
+//        TT_recipeAdder.addResearchableAssemblylineRecipe(ItemList.Hatch_Output_UV.get(1),
+//                12000,32, 500000, 6, new ItemStack[]{
+//                CustomItemList.Machine_Multi_Transformer.get(1),
+//                GT_OreDictUnificator.get(OrePrefixes.pipeMedium, Materials.Naquadah, 4),
+//                ItemList.Sensor_UV.get(2),
+//                ItemList.Circuit_Wetwaresupercomputer.get(1),
+//                GT_OreDictUnificator.get(OrePrefixes.wireGt02, Materials.Superconductor, 2),
+//        }, new FluidStack[]{
+//                Materials.UUMatter.getFluid(1000),
+//                Materials.Naquadah.getMolten(1296),
+//                new FluidStack(FluidRegistry.getFluid("ic2coolant"), 2000),
+//                Materials.Osmium.getMolten(1296),
+//        }, CustomItemList.Machine_Multi_EMToMatter.get(1), 12000, 100000);
 
         //Multi Infuser
         TT_recipeAdder.addResearchableAssemblylineRecipe(CustomItemList.Machine_Multi_Transformer.get(1),
