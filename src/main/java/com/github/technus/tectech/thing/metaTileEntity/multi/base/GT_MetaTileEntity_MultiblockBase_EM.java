@@ -1529,7 +1529,7 @@ public abstract class GT_MetaTileEntity_MultiblockBase_EM extends GT_MetaTileEnt
             //counts only full amps
             for (GT_MetaTileEntity_Hatch_Energy hatch : mEnergyHatches) {
                 if (GT_MetaTileEntity_MultiBlockBase.isValidMetaTileEntity(hatch)) {
-                    eMaxAmpereFlow += hatch.maxEUInput() / maxEUinputMin;
+                    eMaxAmpereFlow += hatch.maxEUInput() / maxEUinputMin * hatch.maxAmperesIn();
                 }
             }
             for (GT_MetaTileEntity_Hatch_EnergyMulti hatch : eEnergyMulti) {
@@ -1539,7 +1539,7 @@ public abstract class GT_MetaTileEntity_MultiblockBase_EM extends GT_MetaTileEnt
             }
             for (GT_MetaTileEntity_Hatch_Dynamo hatch : mDynamoHatches) {
                 if (GT_MetaTileEntity_MultiBlockBase.isValidMetaTileEntity(hatch)) {
-                    eMaxAmpereGen += hatch.maxEUOutput() / maxEUoutputMin;
+                    eMaxAmpereGen += hatch.maxEUOutput() / maxEUoutputMin * hatch.maxAmperesOut();
                 }
             }
             for (GT_MetaTileEntity_Hatch_DynamoMulti hatch : eDynamoMulti) {
