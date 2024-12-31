@@ -11,7 +11,7 @@ import gregtech.api.interfaces.ITexture;
 import gregtech.api.interfaces.tileentity.IGregTechTileEntity;
 import gregtech.api.metatileentity.MetaTileEntity;
 import gregtech.api.metatileentity.implementations.GT_MetaTileEntity_TieredMachineBlock;
-import gregtech.api.objects.GT_RenderedTexture;
+import gregtech.api.render.TextureFactory;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
@@ -26,7 +26,7 @@ import static net.minecraft.util.StatCollector.translateToLocal;
  * Created by Tec on 23.03.2017.
  */
 public class GT_MetaTileEntity_DebugPowerGenerator extends GT_MetaTileEntity_TieredMachineBlock {
-    private static GT_RenderedTexture GENNY;
+    private static ITexture GENNY;
     public int EUT=0,AMP=0;
     public boolean producing=true;
 
@@ -49,7 +49,7 @@ public class GT_MetaTileEntity_DebugPowerGenerator extends GT_MetaTileEntity_Tie
     @SideOnly(Side.CLIENT)
     public void registerIcons(IIconRegister aBlockIconRegister) {
         super.registerIcons(aBlockIconRegister);
-        GENNY = new GT_RenderedTexture(new Textures.BlockIcons.CustomIcon("iconsets/GENNY"));
+        GENNY = TextureFactory.of(new Textures.BlockIcons.CustomIcon("iconsets/GENNY"));
     }
 
     @Override

@@ -2,13 +2,14 @@ package com.github.technus.tectech.thing.casing;
 
 import com.github.technus.tectech.thing.CustomItemList;
 import gregtech.api.enums.Textures;
-import gregtech.api.objects.GT_CopiedBlockTexture;
+import gregtech.api.render.TextureFactory;
 import gregtech.api.util.GT_LanguageManager;
 import gregtech.common.blocks.GT_Block_Casings_Abstract;
 import gregtech.common.blocks.GT_Material_Casings;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
+import net.minecraftforge.common.util.ForgeDirection;
 
 import static com.github.technus.tectech.loader.gui.CreativeTabTecTech.creativeTabTecTech;
 import static com.github.technus.tectech.thing.metaTileEntity.Textures.*;
@@ -25,7 +26,7 @@ public class GT_Block_CasingsNH
         setCreativeTab(creativeTabTecTech);
 
         for (byte b = 0; b < 16; b = (byte) (b + 1)) {
-            Textures.BlockIcons.casingTexturePages[8][b+64] = new GT_CopiedBlockTexture(this, 6, b);
+            Textures.BlockIcons.casingTexturePages[8][b+64] = TextureFactory.of(this, b, ForgeDirection.UNKNOWN);
             /*IMPORTANT for block recoloring*/
         }
 

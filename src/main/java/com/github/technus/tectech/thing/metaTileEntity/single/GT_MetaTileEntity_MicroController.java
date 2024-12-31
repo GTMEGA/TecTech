@@ -17,7 +17,7 @@ import gregtech.api.interfaces.ITexture;
 import gregtech.api.interfaces.metatileentity.IMetaTileEntity;
 import gregtech.api.interfaces.tileentity.IGregTechTileEntity;
 import gregtech.api.metatileentity.implementations.GT_MetaTileEntity_TieredMachineBlock;
-import gregtech.api.objects.GT_RenderedTexture;
+import gregtech.api.render.TextureFactory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 
@@ -176,7 +176,7 @@ public class GT_MetaTileEntity_MicroController extends GT_MetaTileEntity_TieredM
         if(aSide==aBaseMetaTileEntity.getFrontFacing()){
             return new ITexture[]{MACHINE_CASINGS_TT[mTier][aColorIndex + 1], aActive ? READER_ONLINE : READER_OFFLINE};
         }else if(aSide==aFacing){
-            return new ITexture[]{MACHINE_CASINGS_TT[mTier][aColorIndex + 1], new GT_RenderedTexture(Textures.BlockIcons.OVERLAY_PIPE_OUT)};
+            return new ITexture[]{MACHINE_CASINGS_TT[mTier][aColorIndex + 1], TextureFactory.of(Textures.BlockIcons.OVERLAY_PIPE_OUT)};
         }
         return new ITexture[]{MACHINE_CASINGS_TT[mTier][aColorIndex + 1]};
     }

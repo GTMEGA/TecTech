@@ -13,7 +13,7 @@ import gregtech.api.interfaces.ITexture;
 import gregtech.api.interfaces.tileentity.IGregTechTileEntity;
 import gregtech.api.metatileentity.MetaTileEntity;
 import gregtech.api.metatileentity.implementations.GT_MetaTileEntity_TieredMachineBlock;
-import gregtech.api.objects.GT_RenderedTexture;
+import gregtech.api.render.TextureFactory;
 import gregtech.common.GT_Pollution;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.player.EntityPlayer;
@@ -29,7 +29,7 @@ import static net.minecraft.util.StatCollector.translateToLocal;
  * Created by Tec on 23.03.2017.
  */
 public class GT_MetaTileEntity_DebugPollutor extends GT_MetaTileEntity_TieredMachineBlock {
-    private static GT_RenderedTexture POLLUTOR;
+    private static ITexture POLLUTOR;
     public int pollution=0;
     public float anomaly=0;
 
@@ -52,12 +52,12 @@ public class GT_MetaTileEntity_DebugPollutor extends GT_MetaTileEntity_TieredMac
     @SideOnly(Side.CLIENT)
     public void registerIcons(IIconRegister aBlockIconRegister) {
         super.registerIcons(aBlockIconRegister);
-        POLLUTOR = new GT_RenderedTexture(new Textures.BlockIcons.CustomIcon("iconsets/POLLUTOR"));
+        POLLUTOR = TextureFactory.of(new Textures.BlockIcons.CustomIcon("iconsets/POLLUTOR"));
     }
 
     @Override
     public ITexture[] getTexture(IGregTechTileEntity aBaseMetaTileEntity, byte aSide, byte aFacing, byte aColorIndex, boolean aActive, boolean aRedstone) {
-        return new ITexture[]{MACHINE_CASINGS_TT[mTier][aColorIndex + 1], aSide != aFacing ? aActive? new GT_RenderedTexture(GT_MetaTileEntity_Hatch_OverflowElemental.MufflerEM): new GT_RenderedTexture(GT_MetaTileEntity_Hatch_OverflowElemental.MufflerEMidle) : POLLUTOR};
+        return new ITexture[]{MACHINE_CASINGS_TT[mTier][aColorIndex + 1], aSide != aFacing ? aActive? TextureFactory.of(GT_MetaTileEntity_Hatch_OverflowElemental.MufflerEM): TextureFactory.of(GT_MetaTileEntity_Hatch_OverflowElemental.MufflerEMidle) : POLLUTOR};
     }
 
     @Override

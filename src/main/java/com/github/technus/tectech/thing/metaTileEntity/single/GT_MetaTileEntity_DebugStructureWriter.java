@@ -14,7 +14,7 @@ import gregtech.api.interfaces.ITexture;
 import gregtech.api.interfaces.tileentity.IGregTechTileEntity;
 import gregtech.api.metatileentity.MetaTileEntity;
 import gregtech.api.metatileentity.implementations.GT_MetaTileEntity_TieredMachineBlock;
-import gregtech.api.objects.GT_RenderedTexture;
+import gregtech.api.render.TextureFactory;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
@@ -34,7 +34,7 @@ import static net.minecraft.util.StatCollector.translateToLocal;
  * Created by Tec on 23.03.2017.
  */
 public class GT_MetaTileEntity_DebugStructureWriter extends GT_MetaTileEntity_TieredMachineBlock {
-    private static GT_RenderedTexture MARK;
+    private static ITexture MARK;
     public short[] numbers = new short[6];
     public boolean size = false;
     public String[] result = new String[]{"Undefined"};
@@ -58,12 +58,12 @@ public class GT_MetaTileEntity_DebugStructureWriter extends GT_MetaTileEntity_Ti
     @SideOnly(Side.CLIENT)
     public void registerIcons(IIconRegister aBlockIconRegister) {
         super.registerIcons(aBlockIconRegister);
-        MARK = new GT_RenderedTexture(new Textures.BlockIcons.CustomIcon("iconsets/MARK"));
+        MARK = TextureFactory.of(new Textures.BlockIcons.CustomIcon("iconsets/MARK"));
     }
 
     @Override
     public ITexture[] getTexture(IGregTechTileEntity aBaseMetaTileEntity, byte aSide, byte aFacing, byte aColorIndex, boolean aActive, boolean aRedstone) {
-        return new ITexture[]{MACHINE_CASINGS_TT[mTier][aColorIndex + 1], aSide != aFacing ? new GT_RenderedTexture(Textures.BlockIcons.OVERLAY_TELEPORTER_ACTIVE) : MARK};
+        return new ITexture[]{MACHINE_CASINGS_TT[mTier][aColorIndex + 1], aSide != aFacing ? TextureFactory.of(Textures.BlockIcons.OVERLAY_TELEPORTER_ACTIVE) : MARK};
     }
 
     @Override

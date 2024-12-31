@@ -14,7 +14,7 @@ import gregtech.api.interfaces.ITexture;
 import gregtech.api.interfaces.tileentity.IGregTechTileEntity;
 import gregtech.api.metatileentity.MetaTileEntity;
 import gregtech.api.metatileentity.implementations.GT_MetaTileEntity_BasicMachine;
-import gregtech.api.objects.GT_RenderedTexture;
+import gregtech.api.render.TextureFactory;
 import gregtech.api.util.GT_Utility;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -39,7 +39,7 @@ import static net.minecraft.util.StatCollector.translateToLocal;
  */
 public class GT_MetaTileEntity_DataReader extends GT_MetaTileEntity_BasicMachine {
     private static final HashMap<Util.ItemStack_NoNBT,ArrayList<IDataRender>> RENDER_REGISTRY =new HashMap<>();
-    public static GT_RenderedTexture READER_ONLINE, READER_OFFLINE;
+    public static ITexture READER_ONLINE, READER_OFFLINE;
 
     public GT_MetaTileEntity_DataReader(int aID, String aName, String aNameRegional, int aTier) {
         super(aID,aName,aNameRegional,aTier,1,"",1,1,"dataReader.png","");
@@ -60,8 +60,8 @@ public class GT_MetaTileEntity_DataReader extends GT_MetaTileEntity_BasicMachine
     @SideOnly(Side.CLIENT)
     public void registerIcons(IIconRegister aBlockIconRegister) {
         super.registerIcons(aBlockIconRegister);
-        READER_ONLINE = new GT_RenderedTexture(new Textures.BlockIcons.CustomIcon("iconsets/READER_ONLINE"));
-        READER_OFFLINE = new GT_RenderedTexture(new Textures.BlockIcons.CustomIcon("iconsets/READER_OFFLINE"));
+        READER_ONLINE = TextureFactory.of(new Textures.BlockIcons.CustomIcon("iconsets/READER_ONLINE"));
+        READER_OFFLINE = TextureFactory.of(new Textures.BlockIcons.CustomIcon("iconsets/READER_OFFLINE"));
     }
 
     @Override
@@ -75,7 +75,7 @@ public class GT_MetaTileEntity_DataReader extends GT_MetaTileEntity_BasicMachine
         if(aSide==mMainFacing){
             return new ITexture[]{MACHINE_CASINGS_TT[mTier][aColorIndex + 1], aActive ? READER_ONLINE : READER_OFFLINE};
         }else if(aSide==aFacing){
-            return new ITexture[]{MACHINE_CASINGS_TT[mTier][aColorIndex + 1], new GT_RenderedTexture(Textures.BlockIcons.OVERLAY_PIPE_OUT)};
+            return new ITexture[]{MACHINE_CASINGS_TT[mTier][aColorIndex + 1], TextureFactory.of(Textures.BlockIcons.OVERLAY_PIPE_OUT)};
         }
         return new ITexture[]{MACHINE_CASINGS_TT[mTier][aColorIndex + 1]};
     }

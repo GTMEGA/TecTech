@@ -11,7 +11,7 @@ import gregtech.api.interfaces.ITexture;
 import gregtech.api.interfaces.tileentity.IGregTechTileEntity;
 import gregtech.api.metatileentity.MetaTileEntity;
 import gregtech.api.metatileentity.implementations.GT_MetaTileEntity_TieredMachineBlock;
-import gregtech.api.objects.GT_RenderedTexture;
+import gregtech.api.render.TextureFactory;
 import gregtech.api.util.GT_Utility;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.player.EntityPlayer;
@@ -24,7 +24,7 @@ import static com.github.technus.tectech.thing.metaTileEntity.Textures.*;
 import static net.minecraft.util.StatCollector.translateToLocal;
 
 public class GT_MetaTileEntity_BuckConverter extends GT_MetaTileEntity_TieredMachineBlock {
-    private static GT_RenderedTexture BUCK,BUCK_ACTIVE;
+    private static ITexture BUCK,BUCK_ACTIVE;
     public int EUT=0,AMP=0;
 
     public GT_MetaTileEntity_BuckConverter(int aID, String aName, String aNameRegional, int aTier) {
@@ -46,8 +46,8 @@ public class GT_MetaTileEntity_BuckConverter extends GT_MetaTileEntity_TieredMac
     @SideOnly(Side.CLIENT)
     public void registerIcons(IIconRegister aBlockIconRegister) {
         super.registerIcons(aBlockIconRegister);
-        BUCK = new GT_RenderedTexture(new Textures.BlockIcons.CustomIcon("iconsets/BUCK"));
-        BUCK_ACTIVE = new GT_RenderedTexture(new Textures.BlockIcons.CustomIcon("iconsets/BUCK_ACTIVE"));
+        BUCK = TextureFactory.of(new Textures.BlockIcons.CustomIcon("iconsets/BUCK"));
+        BUCK_ACTIVE = TextureFactory.of(new Textures.BlockIcons.CustomIcon("iconsets/BUCK_ACTIVE"));
     }
 
     @Override

@@ -4,7 +4,7 @@ import com.github.technus.tectech.thing.CustomItemList;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import gregtech.api.enums.Textures;
-import gregtech.api.objects.GT_CopiedBlockTexture;
+import gregtech.api.render.TextureFactory;
 import gregtech.api.util.GT_LanguageManager;
 import gregtech.common.blocks.GT_Block_Casings_Abstract;
 import gregtech.common.blocks.GT_Material_Casings;
@@ -14,6 +14,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
+import net.minecraftforge.common.util.ForgeDirection;
 
 import java.util.List;
 
@@ -34,7 +35,7 @@ public class GT_Block_CasingsTT extends GT_Block_Casings_Abstract {
         setCreativeTab(creativeTabTecTech);
 
         for (byte b = 0; b < 16; b = (byte) (b + 1)) {
-            Textures.BlockIcons.casingTexturePages[texturePage][b] = new GT_CopiedBlockTexture(this, 6, b);
+            Textures.BlockIcons.casingTexturePages[texturePage][b] = TextureFactory.of(this, b, ForgeDirection.UNKNOWN);
             /*IMPORTANT for block recoloring**/
         }
         GT_LanguageManager.addStringLocalization(getUnlocalizedName() + ".0.name", "High Power Casing");
