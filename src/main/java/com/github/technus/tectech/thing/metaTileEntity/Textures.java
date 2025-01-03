@@ -4,7 +4,6 @@ import gregtech.api.enums.Dyes;
 import gregtech.api.interfaces.IIconContainer;
 import gregtech.api.interfaces.ITexture;
 import gregtech.api.render.TextureFactory;
-import gregtech.api.objects.GT_SidedTexture; // TODO: [VEN] REPLACE
 
 import static gregtech.api.enums.Dyes.MACHINE_METAL;
 import static gregtech.api.enums.Textures.BlockIcons.*;
@@ -196,7 +195,7 @@ public class Textures {
     public Textures(){
         for (byte i = 0; i < MACHINE_CASINGS_TT.length; i++) {
             for (byte j = 0; j < MACHINE_CASINGS_TT[i].length; j++) {
-                MACHINE_CASINGS_TT[i][j] = new GT_SidedTexture(MACHINECASINGS_BOTTOM_TT[i], MACHINECASINGS_TOP_TT[i], MACHINECASINGS_SIDE_TT[i], Dyes.getModulation(j - 1, MACHINE_METAL.mRGBa));
+                MACHINE_CASINGS_TT[i][j] = TextureFactory.of(MACHINECASINGS_BOTTOM_TT[i], MACHINECASINGS_TOP_TT[i], MACHINECASINGS_SIDE_TT[i], Dyes.getModulation(j - 1, MACHINE_METAL.mRGBa));
             }
         }
         MACHINE_CASINGS=MACHINE_CASINGS_TT;
