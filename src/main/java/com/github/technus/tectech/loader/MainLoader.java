@@ -29,6 +29,7 @@ import gregtech.api.util.GT_Recipe;
 import gregtech.api.util.GT_Utility;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemStack;
+import net.minecraft.launchwrapper.Launch;
 import net.minecraft.util.DamageSource;
 import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidStack;
@@ -146,8 +147,19 @@ public final class MainLoader {
         }
 
         progressBarPostLoad.step("Recipes");
-        new RecipeLoader().run();
-        TecTech.LOGGER.info("Recipe Init Done");
+        try {
+            new RecipeLoader().run();
+            TecTech.LOGGER.info("Recipe Init Done");
+        } catch (Throwable t) {
+            TecTech.LOGGER.error("Failed to load recipes");
+            if ((boolean) Launch.blackboard.get("fml.deobfuscatedEnvironment")) {
+                TecTech.LOGGER.error("THIS WOULD CRASH OUTSIDE OF DEV, BUT WE CAUGHT IT IN DEV!!");
+                TecTech.LOGGER.DumpStack(new RuntimeException(t));
+            } else {
+                throw t;
+            }
+        }
+
 
         //Hazmat moved to GT5U
         //progressBarPostLoad.step("Register Extra Hazmat Suits");
