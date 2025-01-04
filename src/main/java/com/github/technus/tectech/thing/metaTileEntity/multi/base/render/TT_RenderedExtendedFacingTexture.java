@@ -45,7 +45,7 @@ public class TT_RenderedExtendedFacingTexture implements ITexture,IColorModulati
     }
 
     @Override
-    public void renderXPos(RenderBlocks aRenderer, Block aBlock, int aX, int aY, int aZ) {
+    public boolean renderXPos(RenderBlocks aRenderer, Block aBlock, int aX, int aY, int aZ) {
         aRenderer.field_152631_f = true;
         LightingHelper lighting = new LightingHelper(aRenderer);
         lighting.setupLightingXPos(aBlock, aX, aY, aZ).setupColor(ForgeDirection.EAST.ordinal(), mRGBa);
@@ -56,10 +56,11 @@ public class TT_RenderedExtendedFacingTexture implements ITexture,IColorModulati
             renderFaceXPos(aRenderer, aX, aY, aZ, mIconContainer.getOverlayIcon(), rotation);
         }
         aRenderer.field_152631_f = false;
+        return true;
     }
 
     @Override
-    public void renderXNeg(RenderBlocks aRenderer, Block aBlock, int aX, int aY, int aZ) {
+    public boolean renderXNeg(RenderBlocks aRenderer, Block aBlock, int aX, int aY, int aZ) {
         LightingHelper lighting = new LightingHelper(aRenderer);
         lighting.setupLightingXNeg(aBlock, aX, aY, aZ).setupColor(ForgeDirection.WEST.ordinal(), mRGBa);
         ExtendedFacing rotation = getExtendedFacing(aX, aY, aZ);
@@ -68,10 +69,11 @@ public class TT_RenderedExtendedFacingTexture implements ITexture,IColorModulati
             lighting.setupColor(ForgeDirection.WEST.ordinal(), 0xffffff);
             renderFaceXNeg(aRenderer, aX, aY, aZ, mIconContainer.getOverlayIcon(), rotation);
         }
+        return true;
     }
 
     @Override
-    public void renderYPos(RenderBlocks aRenderer, Block aBlock, int aX, int aY, int aZ) {
+    public boolean renderYPos(RenderBlocks aRenderer, Block aBlock, int aX, int aY, int aZ) {
         LightingHelper lighting = new LightingHelper(aRenderer);
         lighting.setupLightingYPos(aBlock, aX, aY, aZ).setupColor(ForgeDirection.UP.ordinal(), mRGBa);
         ExtendedFacing rotation = getExtendedFacing(aX, aY, aZ);
@@ -80,10 +82,11 @@ public class TT_RenderedExtendedFacingTexture implements ITexture,IColorModulati
             lighting.setupColor(ForgeDirection.UP.ordinal(), 0xffffff);
             renderFaceYPos(aRenderer, aX, aY, aZ, mIconContainer.getOverlayIcon(), rotation);
         }
+        return true;
     }
 
     @Override
-    public void renderYNeg(RenderBlocks aRenderer, Block aBlock, int aX, int aY, int aZ) {
+    public boolean renderYNeg(RenderBlocks aRenderer, Block aBlock, int aX, int aY, int aZ) {
         LightingHelper lighting = new LightingHelper(aRenderer);
         lighting.setupLightingYNeg(aBlock, aX, aY, aZ).setupColor(ForgeDirection.DOWN.ordinal(), mRGBa);
         ExtendedFacing rotation = getExtendedFacing(aX, aY, aZ);
@@ -92,10 +95,11 @@ public class TT_RenderedExtendedFacingTexture implements ITexture,IColorModulati
             Tessellator.instance.setColorRGBA(255, 255, 255, 255);
             renderFaceYNeg(aRenderer, aX, aY, aZ, mIconContainer.getOverlayIcon(), rotation);
         }
+        return true;
     }
 
     @Override
-    public void renderZPos(RenderBlocks aRenderer, Block aBlock, int aX, int aY, int aZ) {
+    public boolean renderZPos(RenderBlocks aRenderer, Block aBlock, int aX, int aY, int aZ) {
         LightingHelper lighting = new LightingHelper(aRenderer);
         lighting.setupLightingZPos(aBlock, aX, aY, aZ).setupColor(ForgeDirection.SOUTH.ordinal(), mRGBa);
         ExtendedFacing rotation = getExtendedFacing(aX, aY, aZ);
@@ -104,10 +108,11 @@ public class TT_RenderedExtendedFacingTexture implements ITexture,IColorModulati
             lighting.setupColor(ForgeDirection.SOUTH.ordinal(), 0xffffff);
             renderFaceZPos(aRenderer, aX, aY, aZ, mIconContainer.getOverlayIcon(), rotation);
         }
+        return true;
     }
 
     @Override
-    public void renderZNeg(RenderBlocks aRenderer, Block aBlock, int aX, int aY, int aZ) {
+    public boolean renderZNeg(RenderBlocks aRenderer, Block aBlock, int aX, int aY, int aZ) {
         aRenderer.field_152631_f = true;
         LightingHelper lighting = new LightingHelper(aRenderer);
         lighting.setupLightingZNeg(aBlock, aX, aY, aZ).setupColor(ForgeDirection.NORTH.ordinal(), mRGBa);
@@ -118,6 +123,7 @@ public class TT_RenderedExtendedFacingTexture implements ITexture,IColorModulati
             renderFaceZNeg(aRenderer, aX, aY, aZ, mIconContainer.getOverlayIcon(), rotation);
         }
         aRenderer.field_152631_f = false;
+        return true;
     }
 
     /**
