@@ -45,7 +45,9 @@ public class TT_RenderedExtendedFacingTexture implements ITexture,IColorModulati
     }
 
     @Override
-    public boolean renderXPos(RenderBlocks aRenderer, Block aBlock, int aX, int aY, int aZ) {
+    public boolean renderXPos(RenderBlocks aRenderer, Block aBlock, int aX, int aY, int aZ, boolean isTranslucentPass) {
+        if (!shouldRenderOnPass(isTranslucentPass))
+            return false;
         aRenderer.field_152631_f = true;
         LightingHelper lighting = new LightingHelper(aRenderer);
         lighting.setupLightingXPos(aBlock, aX, aY, aZ).setupColor(ForgeDirection.EAST.ordinal(), mRGBa);
@@ -60,7 +62,9 @@ public class TT_RenderedExtendedFacingTexture implements ITexture,IColorModulati
     }
 
     @Override
-    public boolean renderXNeg(RenderBlocks aRenderer, Block aBlock, int aX, int aY, int aZ) {
+    public boolean renderXNeg(RenderBlocks aRenderer, Block aBlock, int aX, int aY, int aZ, boolean isTranslucentPass) {
+        if (!shouldRenderOnPass(isTranslucentPass))
+            return false;
         LightingHelper lighting = new LightingHelper(aRenderer);
         lighting.setupLightingXNeg(aBlock, aX, aY, aZ).setupColor(ForgeDirection.WEST.ordinal(), mRGBa);
         ExtendedFacing rotation = getExtendedFacing(aX, aY, aZ);
@@ -73,7 +77,9 @@ public class TT_RenderedExtendedFacingTexture implements ITexture,IColorModulati
     }
 
     @Override
-    public boolean renderYPos(RenderBlocks aRenderer, Block aBlock, int aX, int aY, int aZ) {
+    public boolean renderYPos(RenderBlocks aRenderer, Block aBlock, int aX, int aY, int aZ, boolean isTranslucentPass) {
+        if (!shouldRenderOnPass(isTranslucentPass))
+            return false;
         LightingHelper lighting = new LightingHelper(aRenderer);
         lighting.setupLightingYPos(aBlock, aX, aY, aZ).setupColor(ForgeDirection.UP.ordinal(), mRGBa);
         ExtendedFacing rotation = getExtendedFacing(aX, aY, aZ);
@@ -86,7 +92,9 @@ public class TT_RenderedExtendedFacingTexture implements ITexture,IColorModulati
     }
 
     @Override
-    public boolean renderYNeg(RenderBlocks aRenderer, Block aBlock, int aX, int aY, int aZ) {
+    public boolean renderYNeg(RenderBlocks aRenderer, Block aBlock, int aX, int aY, int aZ, boolean isTranslucentPass) {
+        if (!shouldRenderOnPass(isTranslucentPass))
+            return false;
         LightingHelper lighting = new LightingHelper(aRenderer);
         lighting.setupLightingYNeg(aBlock, aX, aY, aZ).setupColor(ForgeDirection.DOWN.ordinal(), mRGBa);
         ExtendedFacing rotation = getExtendedFacing(aX, aY, aZ);
@@ -99,7 +107,9 @@ public class TT_RenderedExtendedFacingTexture implements ITexture,IColorModulati
     }
 
     @Override
-    public boolean renderZPos(RenderBlocks aRenderer, Block aBlock, int aX, int aY, int aZ) {
+    public boolean renderZPos(RenderBlocks aRenderer, Block aBlock, int aX, int aY, int aZ, boolean isTranslucentPass) {
+        if (!shouldRenderOnPass(isTranslucentPass))
+            return false;
         LightingHelper lighting = new LightingHelper(aRenderer);
         lighting.setupLightingZPos(aBlock, aX, aY, aZ).setupColor(ForgeDirection.SOUTH.ordinal(), mRGBa);
         ExtendedFacing rotation = getExtendedFacing(aX, aY, aZ);
@@ -112,7 +122,9 @@ public class TT_RenderedExtendedFacingTexture implements ITexture,IColorModulati
     }
 
     @Override
-    public boolean renderZNeg(RenderBlocks aRenderer, Block aBlock, int aX, int aY, int aZ) {
+    public boolean renderZNeg(RenderBlocks aRenderer, Block aBlock, int aX, int aY, int aZ, boolean isTranslucentPass) {
+        if (!shouldRenderOnPass(isTranslucentPass))
+            return false;
         aRenderer.field_152631_f = true;
         LightingHelper lighting = new LightingHelper(aRenderer);
         lighting.setupLightingZNeg(aBlock, aX, aY, aZ).setupColor(ForgeDirection.NORTH.ordinal(), mRGBa);
@@ -889,6 +901,11 @@ public class TT_RenderedExtendedFacingTexture implements ITexture,IColorModulati
     @Override
     public boolean isValidTexture() {
         return mIconContainer != null;
+    }
+
+    @Override
+    public boolean isTranslucent() {
+        return false;
     }
 
     private static ExtendedFacing getExtendedFacing(int x, int y, int z) {
