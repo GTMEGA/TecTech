@@ -51,10 +51,10 @@ public final class QuantumGlassBlock extends BlockBase {
         return false;
     }
 
-    //@Override
-    //public boolean canRenderInPass(int pass) {
-    //    return true;
-    //}
+    @Override
+    public boolean canRenderInPass(int pass) {
+        return pass == 1;
+    }
 
     @Override
     public boolean canBeReplacedByLeaves(IBlockAccess world, int x, int y, int z) {
@@ -74,9 +74,9 @@ public final class QuantumGlassBlock extends BlockBase {
 
     @Override
     @SideOnly(Side.CLIENT)
-    public boolean shouldSideBeRendered(IBlockAccess p_149646_1_, int p_149646_2_, int p_149646_3_, int p_149646_4_, int p_149646_5_) {
-        Block block = p_149646_1_.getBlock(p_149646_2_, p_149646_3_, p_149646_4_);
-        return block != this;// && super.shouldSideBeRendered(p_149646_1_, p_149646_2_, p_149646_3_, p_149646_4_, p_149646_5_);
+    public boolean shouldSideBeRendered(IBlockAccess world, int posX, int posY, int posZ, int p_149646_5_) {
+        Block block = world.getBlock(posX, posY, posZ);
+        return !(block == this || block == QuantumStuffBlock.INSTANCE);
     }
 
     @Override

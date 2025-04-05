@@ -53,9 +53,8 @@ public final class QuantumStuffRender implements ISimpleBlockRenderingHandler {
     @Override
     public boolean renderWorldBlock(IBlockAccess world, int x, int y, int z, Block block, int modelId, RenderBlocks renderer) {
         //renderer.renderStandardBlock(block, x, y, z);
-        GL11.glPushMatrix();
         tes.setNormal(0F, 1F, 0F);
-        tes.setBrightness(15728880);
+        tes.setBrightness(0xF000F0);
         IIcon side = QuantumStuffBlock.stuff;
         for(int i=0;i<6;i++){
             float f = 1 - TecTech.RANDOM.nextFloat() / 4f, g = f - TecTech.RANDOM.nextFloat() / 4f, r = g - TecTech.RANDOM.nextFloat() / 4f - 0.25f;
@@ -71,7 +70,6 @@ public final class QuantumStuffRender implements ISimpleBlockRenderingHandler {
             tesAbuse(x,y,z,-1.425f,1.425f,-.1f,rotX,rotY,rotZ,side.getMinU(), side.getMinV());
             tesAbuse(x,y,z,-1.425f,-1.425f,-.1f,rotX,rotY,rotZ,side.getMinU(), side.getMaxV());
         }
-        GL11.glPopMatrix();
         return true;
     }
 
