@@ -42,17 +42,6 @@ public class RecipeLoader implements Runnable {
         // Recipes init - common goes here rest goes into methods below
         // ===================================================================================================
 
-        for(int i=0;i<=15;i++) {
-            RA.addAssemblerRecipe(new ItemStack[]{GT_Utility.getIntegratedCircuit(i), GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Cobalt, 1)}, Materials.Aluminium.getMolten(864), new ItemStack(TT_Container_Casings.sHintCasingsTT, 1, i), 32, 120);
-        }
-
-        //Scrench
-        GT_ModHandler.addCraftingRecipe(new ItemStack(FrontRotationTriggerItem.INSTANCE,1),
-                GT_ModHandler.RecipeBits.BUFFERED | GT_ModHandler.RecipeBits.NOT_REMOVABLE,
-                new Object[]{"fPR", " RP", "S h",
-                        'P', OrePrefixes.plate.get(Materials.Cobalt),
-                        'R', OrePrefixes.stick.get(Materials.Cobalt),
-                        'S', OrePrefixes.stick.get(Materials.Wood),});
 
         //BLUEprint
         /*GT_ModHandler.addShapelessCraftingRecipe(new ItemStack(ConstructableTriggerItem.INSTANCE, 1),
