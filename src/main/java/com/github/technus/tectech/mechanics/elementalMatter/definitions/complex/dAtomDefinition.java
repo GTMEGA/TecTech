@@ -1474,23 +1474,23 @@ public final class dAtomDefinition extends cElementalDefinition {
         /*----STABLE ATOMS----**/
         refMass = getFirstStableIsotope(1).getMass() * AVOGADRO_CONSTANT_144;
 
-        TRANSFORMATION_INFO.addFluid(new cElementalDefinitionStack(getFirstStableIsotope(1), AVOGADRO_CONSTANT_144),Materials.Hydrogen.mGas,144);
-        TRANSFORMATION_INFO.addFluid(new cElementalDefinitionStack(getFirstStableIsotope(2), AVOGADRO_CONSTANT_144),Materials.Helium.mGas, 144);
+        TRANSFORMATION_INFO.addFluid(new cElementalDefinitionStack(getFirstStableIsotope(1), AVOGADRO_CONSTANT_144),Materials.Hydrogen.mFluid,144);
+        TRANSFORMATION_INFO.addFluid(new cElementalDefinitionStack(getFirstStableIsotope(2), AVOGADRO_CONSTANT_144),Materials.Helium.mFluid, 144);
         TRANSFORMATION_INFO.addOredict(new cElementalDefinitionStack(getFirstStableIsotope(3), AVOGADRO_CONSTANT_144), dust, Materials.Lithium,1);
         TRANSFORMATION_INFO.addOredict(new cElementalDefinitionStack(getFirstStableIsotope(4), AVOGADRO_CONSTANT_144), dust, Materials.Beryllium,1);
         TRANSFORMATION_INFO.addOredict(new cElementalDefinitionStack(getFirstStableIsotope(5), AVOGADRO_CONSTANT_144), dust, Materials.Boron,1);
         TRANSFORMATION_INFO.addOredict(new cElementalDefinitionStack(getFirstStableIsotope(6), AVOGADRO_CONSTANT_144), dust, Materials.Carbon,1);
-        TRANSFORMATION_INFO.addFluid(new cElementalDefinitionStack(getFirstStableIsotope(7), AVOGADRO_CONSTANT_144),Materials.Nitrogen.mGas, 144);
-        TRANSFORMATION_INFO.addFluid(new cElementalDefinitionStack(getFirstStableIsotope(8), AVOGADRO_CONSTANT_144),Materials.Oxygen.mGas, 144);
-        TRANSFORMATION_INFO.addFluid(new cElementalDefinitionStack(getFirstStableIsotope(9), AVOGADRO_CONSTANT_144),Materials.Fluorine.mGas, 144);
-        //transformation.addFluid(new cElementalDefinitionStack(getFirstStableIsotope(10), AVOGADRO_CONSTANT_144),Materials.Neon.mGas.getID(), 144);
+        TRANSFORMATION_INFO.addFluid(new cElementalDefinitionStack(getFirstStableIsotope(7), AVOGADRO_CONSTANT_144),Materials.Nitrogen.mFluid, 144);
+        TRANSFORMATION_INFO.addFluid(new cElementalDefinitionStack(getFirstStableIsotope(8), AVOGADRO_CONSTANT_144),Materials.Oxygen.mFluid, 144);
+        TRANSFORMATION_INFO.addFluid(new cElementalDefinitionStack(getFirstStableIsotope(9), AVOGADRO_CONSTANT_144),Materials.Fluorine.mFluid, 144);
+        //transformation.addFluid(new cElementalDefinitionStack(getFirstStableIsotope(10), AVOGADRO_CONSTANT_144),Materials.Neon.mFluid.getID(), 144);
         TRANSFORMATION_INFO.addOredict(new cElementalDefinitionStack(getFirstStableIsotope(11), AVOGADRO_CONSTANT_144), dust, Materials.Sodium,1);
         TRANSFORMATION_INFO.addOredict(new cElementalDefinitionStack(getFirstStableIsotope(12), AVOGADRO_CONSTANT_144), dust, Materials.Magnesium,1);
         TRANSFORMATION_INFO.addOredict(new cElementalDefinitionStack(getFirstStableIsotope(13), AVOGADRO_CONSTANT_144), dust, Materials.Aluminium,1);
         TRANSFORMATION_INFO.addOredict(new cElementalDefinitionStack(getFirstStableIsotope(14), AVOGADRO_CONSTANT_144), dust, Materials.Silicon,1);
         TRANSFORMATION_INFO.addOredict(new cElementalDefinitionStack(getFirstStableIsotope(15), AVOGADRO_CONSTANT_144), dust, Materials.Phosphorus,1);
         TRANSFORMATION_INFO.addOredict(new cElementalDefinitionStack(getFirstStableIsotope(16), AVOGADRO_CONSTANT_144), dust, Materials.Sulfur,1);
-        TRANSFORMATION_INFO.addFluid(new cElementalDefinitionStack(getFirstStableIsotope(17), AVOGADRO_CONSTANT_144),Materials.Argon.mGas, 144);
+        TRANSFORMATION_INFO.addFluid(new cElementalDefinitionStack(getFirstStableIsotope(17), AVOGADRO_CONSTANT_144),Materials.Argon.mFluid, 144);
         TRANSFORMATION_INFO.addOredict(new cElementalDefinitionStack(getFirstStableIsotope(19), AVOGADRO_CONSTANT_144), dust, Materials.Potassium,1);
         TRANSFORMATION_INFO.addOredict(new cElementalDefinitionStack(getFirstStableIsotope(20), AVOGADRO_CONSTANT_144), dust, Materials.Calcium,1);
         TRANSFORMATION_INFO.addOredict(new cElementalDefinitionStack(getFirstStableIsotope(21), AVOGADRO_CONSTANT_144), dust, Materials.Scandium,1);
@@ -1526,7 +1526,7 @@ public final class dAtomDefinition extends cElementalDefinition {
         TRANSFORMATION_INFO.addOredict(new cElementalDefinitionStack(getFirstStableIsotope(51), AVOGADRO_CONSTANT_144), dust, Materials.Antimony,1);
         TRANSFORMATION_INFO.addOredict(new cElementalDefinitionStack(getFirstStableIsotope(52), AVOGADRO_CONSTANT_144), dust, Materials.Tellurium,1);
         //transformation.addOredict(new cElementalDefinitionStack(getFirstStableIsotope(53), AVOGADRO_CONSTANT_144),OrePrefixes.dust, Materials.Iodine,1);
-        //transformation.addFluid(new cElementalDefinitionStack(getFirstStableIsotope(54), AVOGADRO_CONSTANT_144),Materials.Xenon.mGas.getID(), 144);
+        //transformation.addFluid(new cElementalDefinitionStack(getFirstStableIsotope(54), AVOGADRO_CONSTANT_144),Materials.Xenon.mFluid.getID(), 144);
         TRANSFORMATION_INFO.addOredict(new cElementalDefinitionStack(getFirstStableIsotope(55), AVOGADRO_CONSTANT_144), dust, Materials.Caesium,1);
         TRANSFORMATION_INFO.addOredict(new cElementalDefinitionStack(getFirstStableIsotope(56), AVOGADRO_CONSTANT_144), dust, Materials.Barium,1);
         TRANSFORMATION_INFO.addOredict(new cElementalDefinitionStack(getFirstStableIsotope(57), AVOGADRO_CONSTANT_144), dust, Materials.Lanthanum,1);
@@ -1562,7 +1562,7 @@ public final class dAtomDefinition extends cElementalDefinition {
         TRANSFORMATION_INFO.addOredict(new cElementalDefinitionStack(getBestUnstableIsotope(83), AVOGADRO_CONSTANT_144), dust, Materials.Bismuth,1);
         //transformation.addOredict(new cElementalDefinitionStack(getBestUnstableIsotope(84),AVOGADRO_CONSTANT_144),OrePrefixes.dust, Materials.Polonium,1);
         //transformation.addFluid(new cElementalDefinitionStack(getBestUnstableIsotope(85),AVOGADRO_CONSTANT_144),Materials.Astatine.mPlasma.getID(), 144);
-        TRANSFORMATION_INFO.addFluid(new cElementalDefinitionStack(getBestUnstableIsotope(86), AVOGADRO_CONSTANT_144),Materials.Radon.mGas, 144);
+        TRANSFORMATION_INFO.addFluid(new cElementalDefinitionStack(getBestUnstableIsotope(86), AVOGADRO_CONSTANT_144),Materials.Radon.mFluid, 144);
         //transformation.addOredict(new cElementalDefinitionStack(getBestUnstableIsotope(87),AVOGADRO_CONSTANT_144),OrePrefixes.dust, Materials.Francium,1);
         //transformation.addOredict(new cElementalDefinitionStack(getBestUnstableIsotope(88),AVOGADRO_CONSTANT_144),OrePrefixes.dust, Materials.Radium,1);
         //transformation.addOredict(new cElementalDefinitionStack(getBestUnstableIsotope(89),AVOGADRO_CONSTANT_144),OrePrefixes.dust, Materials.Actinium,1);
@@ -1575,11 +1575,11 @@ public final class dAtomDefinition extends cElementalDefinition {
 
         try {
             dAtomDefinition temp;
-            TRANSFORMATION_INFO.addFluid(new cElementalDefinitionStack(deuterium.definition, AVOGADRO_CONSTANT_144),Materials.Deuterium.mGas, 144);
+            TRANSFORMATION_INFO.addFluid(new cElementalDefinitionStack(deuterium.definition, AVOGADRO_CONSTANT_144),Materials.Deuterium.mFluid, 144);
 
-            TRANSFORMATION_INFO.addFluid(new cElementalDefinitionStack(tritium.definition, AVOGADRO_CONSTANT_144),Materials.Tritium.mGas, 144);
+            TRANSFORMATION_INFO.addFluid(new cElementalDefinitionStack(tritium.definition, AVOGADRO_CONSTANT_144),Materials.Tritium.mFluid, 144);
 
-            TRANSFORMATION_INFO.addFluid(new cElementalDefinitionStack(helium_3.definition, AVOGADRO_CONSTANT_144),Materials.Helium_3.mGas, 144);
+            TRANSFORMATION_INFO.addFluid(new cElementalDefinitionStack(helium_3.definition, AVOGADRO_CONSTANT_144),Materials.Helium_3.mFluid, 144);
 
             temp=new dAtomDefinition(
                     new cElementalDefinitionStack(eLeptonDefinition.lepton_e, 92),

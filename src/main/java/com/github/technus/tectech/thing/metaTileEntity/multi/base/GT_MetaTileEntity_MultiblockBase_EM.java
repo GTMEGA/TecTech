@@ -221,24 +221,24 @@ public abstract class GT_MetaTileEntity_MultiblockBase_EM extends GT_MetaTileEnt
         IGregTechTileEntity baseMetaTileEntity = getBaseMetaTileEntity();
         return getStructure_EM_Internal().check(this,piece, baseMetaTileEntity.getWorld(),getExtendedFacing(),
                 baseMetaTileEntity.getXCoord(),baseMetaTileEntity.getYCoord(),baseMetaTileEntity.getZCoord(),
-                horizontalOffset,verticalOffset,depthOffset,!mMachine,null);
+                horizontalOffset,verticalOffset,depthOffset,!mMachine);
     }
 
     public final boolean structureBuild_EM(String piece,int horizontalOffset, int verticalOffset, int depthOffset,boolean hintsOnly,ItemStack trigger) {
         IGregTechTileEntity baseMetaTileEntity = getBaseMetaTileEntity();
         return getStructure_EM_Internal().buildOrHints(this, trigger, piece, baseMetaTileEntity.getWorld(),
                 getExtendedFacing(), baseMetaTileEntity.getXCoord(), baseMetaTileEntity.getYCoord(),
-                baseMetaTileEntity.getZCoord(), horizontalOffset, verticalOffset, depthOffset, hintsOnly,null);
+                baseMetaTileEntity.getZCoord(), horizontalOffset, verticalOffset, depthOffset, hintsOnly);
     }
 
-    public final boolean structureCheck_EM(String piece, int horizontalOffset, int verticalOffset, int depthOffset, IStructureDefinition.FailedCallback<GT_MetaTileEntity_MultiblockBase_EM> failCallback) {
+    public final boolean structureCheck_EM(String piece, int horizontalOffset, int verticalOffset, int depthOffset, IStructureDefinition.Callback<GT_MetaTileEntity_MultiblockBase_EM> failCallback) {
         IGregTechTileEntity baseMetaTileEntity = getBaseMetaTileEntity();
         return getStructure_EM_Internal().check(this,piece, baseMetaTileEntity.getWorld(),getExtendedFacing(),
                 baseMetaTileEntity.getXCoord(),baseMetaTileEntity.getYCoord(),baseMetaTileEntity.getZCoord(),
                 horizontalOffset,verticalOffset,depthOffset,!mMachine,failCallback);
     }
 
-    public final boolean structureBuild_EM(String piece,int horizontalOffset, int verticalOffset, int depthOffset,boolean hintsOnly,ItemStack trigger, IStructureDefinition.FailedCallback<GT_MetaTileEntity_MultiblockBase_EM> failCallback) {
+    public final boolean structureBuild_EM(String piece,int horizontalOffset, int verticalOffset, int depthOffset,boolean hintsOnly,ItemStack trigger, IStructureDefinition.Callback<GT_MetaTileEntity_MultiblockBase_EM> failCallback) {
         IGregTechTileEntity baseMetaTileEntity = getBaseMetaTileEntity();
         return getStructure_EM_Internal().buildOrHints(this, trigger, piece, baseMetaTileEntity.getWorld(),
                 getExtendedFacing(), baseMetaTileEntity.getXCoord(), baseMetaTileEntity.getYCoord(),
