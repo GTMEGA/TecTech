@@ -124,13 +124,20 @@ public class GT_MetaTileEntity_DebugStructureWriter extends GT_MetaTileEntity_Ti
 //                    aBaseMetaTileEntity.getXCoord(), aBaseMetaTileEntity.getYCoord(), aBaseMetaTileEntity.getZCoord(),
 //                    numbers[0], numbers[1], numbers[2],
 //                    numbers[3], numbers[4], numbers[5],false);
-            String pseudoJavaCode = StructureUtility.getPseudoJavaCode(
-                    aBaseMetaTileEntity.getWorld(), ExtendedFacing.of(ForgeDirection.getOrientation(aBaseMetaTileEntity.getFrontFacing())),
-                    aBaseMetaTileEntity.getXCoord(), aBaseMetaTileEntity.getYCoord(), aBaseMetaTileEntity.getZCoord(),
-                    numbers[0], numbers[1], numbers[2],
-                    te -> te.getClass().getCanonicalName(),
-                    numbers[3], numbers[4], numbers[5],
-                    false);
+
+            String pseudoJavaCode = StructureUtility.WRITER.write(aBaseMetaTileEntity.getWorld(),
+                                                                  ExtendedFacing.of(ForgeDirection.getOrientation(aBaseMetaTileEntity.getFrontFacing())),
+                                                                  aBaseMetaTileEntity.getXCoord(),
+                                                                  aBaseMetaTileEntity.getYCoord(),
+                                                                  aBaseMetaTileEntity.getZCoord(),
+                                                                  numbers[0],
+                                                                  numbers[1],
+                                                                  numbers[2],
+                                                                  te -> te.getClass().getCanonicalName(),
+                                                                  numbers[3],
+                                                                  numbers[4],
+                                                                  numbers[5],
+                                                                  false);
             TecTech.LOGGER.info(pseudoJavaCode);
             result = pseudoJavaCode.split("\\n");
             aBaseMetaTileEntity.disableWorking();
@@ -145,13 +152,19 @@ public class GT_MetaTileEntity_DebugStructureWriter extends GT_MetaTileEntity_Ti
 //                aBaseMetaTileEntity.getXCoord(), aBaseMetaTileEntity.getYCoord(), aBaseMetaTileEntity.getZCoord(),
 //                numbers[0], numbers[1], numbers[2],
 //                numbers[3], numbers[4], numbers[5],true);
-        String pseudoJavaCode = StructureUtility.getPseudoJavaCode(
-                aBaseMetaTileEntity.getWorld(), ExtendedFacing.of(ForgeDirection.getOrientation(aBaseMetaTileEntity.getFrontFacing())),
-                aBaseMetaTileEntity.getXCoord(), aBaseMetaTileEntity.getYCoord(), aBaseMetaTileEntity.getZCoord(),
-                numbers[0], numbers[1], numbers[2],
-                te -> te.getClass().getCanonicalName(),
-                numbers[3], numbers[4], numbers[5],
-                false);
+        String pseudoJavaCode = StructureUtility.WRITER.write(aBaseMetaTileEntity.getWorld(),
+                                                              ExtendedFacing.of(ForgeDirection.getOrientation(aBaseMetaTileEntity.getFrontFacing())),
+                                                              aBaseMetaTileEntity.getXCoord(),
+                                                              aBaseMetaTileEntity.getYCoord(),
+                                                              aBaseMetaTileEntity.getZCoord(),
+                                                              numbers[0],
+                                                              numbers[1],
+                                                              numbers[2],
+                                                              te -> te.getClass().getCanonicalName(),
+                                                              numbers[3],
+                                                              numbers[4],
+                                                              numbers[5],
+                                                              false);
         TecTech.LOGGER.info(pseudoJavaCode);
         result = pseudoJavaCode.split("\\n");
         aBaseMetaTileEntity.disableWorking();

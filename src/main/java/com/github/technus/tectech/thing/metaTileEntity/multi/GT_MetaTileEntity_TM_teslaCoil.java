@@ -313,21 +313,21 @@ public class GT_MetaTileEntity_TM_teslaCoil extends GT_MetaTileEntity_Multiblock
                 if (fluidHatch.mFluid.isFluidEqual(Materials.Helium.getPlasma(1)) && fluidHatch.mFluid.amount >= heliumUse) {
                     fluidHatch.mFluid.amount = fluidHatch.mFluid.amount - heliumUse;
                     if (doFluidOutput) {
-                        mOutputFluidsQueue = new FluidStack[]{Materials.Helium.getGas(heliumUse)};
+                        mOutputFluidsQueue = new FluidStack[]{Materials.Helium.getFluid(heliumUse)};
                     }
                     plasmaTier = 1;
                     return;
                 } else if (fluidHatch.mFluid.isFluidEqual(Materials.Nitrogen.getPlasma(1)) && fluidHatch.mFluid.amount >= nitrogenUse) {
                     fluidHatch.mFluid.amount = fluidHatch.mFluid.amount - nitrogenUse;
                     if (doFluidOutput) {
-                        mOutputFluidsQueue = new FluidStack[]{Materials.Nitrogen.getGas(nitrogenUse)};
+                        mOutputFluidsQueue = new FluidStack[]{Materials.Nitrogen.getFluid(nitrogenUse)};
                     }
                     plasmaTier = 1;
                     return;
                 } else if (fluidHatch.mFluid.isFluidEqual(Materials.Radon.getPlasma(1)) && fluidHatch.mFluid.amount >= radonUse) {
                     fluidHatch.mFluid.amount = fluidHatch.mFluid.amount - radonUse;
                     if (doFluidOutput) {
-                        mOutputFluidsQueue = new FluidStack[]{Materials.Radon.getGas(radonUse)};
+                        mOutputFluidsQueue = new FluidStack[]{Materials.Radon.getFluid(radonUse)};
                     }
                     plasmaTier = 2;
                     return;

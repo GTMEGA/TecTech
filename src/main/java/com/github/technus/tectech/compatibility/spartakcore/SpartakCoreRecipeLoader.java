@@ -30,10 +30,10 @@ public class SpartakCoreRecipeLoader implements Runnable {
     public void run() {
         
       //Quantum Glass
-        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{
-                CustomItemList.eM_Containment.get(1),
-                GT_ModHandler.getIC2Item("reinforcedGlass", 1L)
-        }, Materials.Osmium.getMolten(576), new ItemStack(QuantumGlassBlock.INSTANCE, 1), 200, 500000);
+//        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{
+//                CustomItemList.eM_Containment.get(1),
+//                GT_ModHandler.getIC2Item("reinforcedGlass", 1L)
+//        }, Materials.Osmium.getMolten(576), new ItemStack(QuantumGlassBlock.INSTANCE, 1), 200, 500000);
 
         //region pipes
 
@@ -56,11 +56,11 @@ public class SpartakCoreRecipeLoader implements Runnable {
 //        }, Materials.Osmium.getMolten(288), CustomItemList.EMpipe.get(1), 400, 500000);
         
         //Laser
-        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{
-                CustomItemList.DATApipe.get(1),
-                GT_ModHandler.getIC2Item("reinforcedGlass", 1L),
-                GT_OreDictUnificator.get(OrePrefixes.foil, Materials.Osmiridium, 2)
-        }, null, CustomItemList.LASERpipe.get(1), 100, 500000);
+//        GT_Values.RA.addAssemblerRecipe(new ItemStack[]{
+//                CustomItemList.DATApipe.get(1),
+//                GT_ModHandler.getIC2Item("reinforcedGlass", 1L),
+//                GT_OreDictUnificator.get(OrePrefixes.foil, Materials.Osmiridium, 2)
+//        }, null, CustomItemList.LASERpipe.get(1), 100, 500000);
         
         //endregoin
 
@@ -124,7 +124,7 @@ public class SpartakCoreRecipeLoader implements Runnable {
                         getOrDefault("Trinium",Materials.Americium).getMolten(1296),
                         Materials.Osmium.getMolten(1296),
                         new FluidStack(FluidRegistry.getFluid("ic2coolant"), 2000),
-                        Materials.Argon.getGas(1000),
+                        Materials.Argon.getFluid(1000),
                 }, CustomItemList.eM_Hollow.get(2), 200, 2000000);
 
         //EM Coil
