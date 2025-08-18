@@ -5,9 +5,9 @@ import gregtech.api.interfaces.tileentity.ICoverable;
 import gregtech.api.util.GT_CoverBehavior;
 import gregtech.api.util.GT_Utility;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.util.DamageSource;
 
 import static com.github.technus.tectech.mechanics.tesla.ITeslaConnectable.TeslaUtil.*;
-import static ic2.api.info.Info.DMG_ELECTRIC;
 
 public class GT_Cover_TM_TeslaCoil extends GT_CoverBehavior {
     public GT_Cover_TM_TeslaCoil() {
@@ -38,7 +38,7 @@ public class GT_Cover_TM_TeslaCoil extends GT_CoverBehavior {
     public int onCoverScrewdriverclick(byte aSide, int aCoverID, int aCoverVariable, ICoverable aTileEntity, EntityPlayer aPlayer, float aX, float aY, float aZ) {
         //Shock a non-hazmat player if they dare stuff a screwdriver into one of these
         if (aTileEntity.getStoredEU() > 0 && !GT_Utility.isWearingFullElectroHazmat(aPlayer)) {
-            aPlayer.attackEntityFrom(DMG_ELECTRIC, 20);
+            aPlayer.attackEntityFrom(DamageSource.magic, 20);
         }
         return aCoverVariable;
     }

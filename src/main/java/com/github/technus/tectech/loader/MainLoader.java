@@ -70,7 +70,7 @@ public final class MainLoader {
     }
 
     public static void load() {
-        ProgressManager.ProgressBar progressBarLoad = ProgressManager.push("TecTech Loader", 9);
+        ProgressManager.ProgressBar progressBarLoad = ProgressManager.push("TecTech Loader", 8);
 
         progressBarLoad.step("Elemental Things");
         new ElementalLoader().run();
@@ -95,10 +95,6 @@ public final class MainLoader {
         progressBarLoad.step("Cover Things");
         new CoverLoader().run();
         LOGGER.info("Cover Init Done");
-
-        progressBarLoad.step("Register entities");
-        new EntityLoader().run();
-        LOGGER.info("Entities registered");
 
         progressBarLoad.step("Add damage types");
         microwaving =new DamageSource("microwaving").setDamageBypassesArmor();

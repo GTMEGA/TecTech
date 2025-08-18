@@ -3,7 +3,6 @@
 dependencies {
     shadowImplementation("com.github.GTNewHorizons:AVRcore:master-SNAPSHOT")
 
-    implementation("net.industrial-craft:industrialcraft-2:2.2.828-experimental:dev")
     implementation("gtmega:gt5u-mc1.7.10:5.47.2-mega:dev")
     implementation("mega:structurelib-mc1.7.10:1.4.1-mega:dev")
     implementation("eu.usrv:YAMCore:1.7.10-0.5.79:deobf")
@@ -15,9 +14,6 @@ dependencies {
         transitive = false
     }
 
-    compileOnly("dan200.computercraft:ComputerCraft:1.75") {
-        transitive = false
-    }
     compileOnly("li.cil.oc:OpenComputers:MC1.7.10-1.7.5.1356:dev") {
         transitive = false
     }
